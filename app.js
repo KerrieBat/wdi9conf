@@ -5,9 +5,13 @@ var bodyParser = require('body-parser');
 var app = express();
 app.set('port', process.env.PORT || 8080);
 
-// Middleware
+// Middleware to parse post data and attach it to req.body
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({  extended: false }));
+
+// Set default template to be pug.
+app.set('views', './views');
+app.set('view engine', 'pug');
 
 // Routes
 
