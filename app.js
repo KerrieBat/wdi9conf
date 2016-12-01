@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var ticketRoutes = require('./routes/ticket');
 
 // Configure app
 var app = express();
@@ -14,6 +15,11 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 
 // Routes
+
+// API
+var router = express.Router();
+router.use('/tickets', ticketRoutes);
+app.use('/api', router);
 
 // Start server
 app.listen(app.get('port'), () => {
