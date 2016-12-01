@@ -1,0 +1,6 @@
+# Dependencies
+node_modules/
+
+# Generate files
+public/scripts
+public/stylesheets
