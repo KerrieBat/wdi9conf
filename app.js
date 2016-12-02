@@ -15,6 +15,9 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 
 // Routes
+app.get('/', function(req, res){
+  res.render('index');
+});
 
 // API
 var router = express.Router();
