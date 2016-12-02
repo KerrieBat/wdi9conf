@@ -1,3 +1,11 @@
 .contact {
 background-color: pink;
 }
+
+.parallax-container {
+     height: 300px;
+   }
+.slider {
+  max-height: 300px;
+  color: green;
+}
