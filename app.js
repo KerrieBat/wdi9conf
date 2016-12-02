@@ -16,6 +16,7 @@ app.set('view engine', 'pug');
 
 // Routes
 app.get('/', function(req, res){
+
   res.render('index');
 });
 
@@ -23,6 +24,7 @@ app.get('/', function(req, res){
 var router = express.Router();
 router.use('/tickets', ticketRoutes);
 app.use('/api', router);
+
 
 // Start server
 app.listen(app.get('port'), () => {
