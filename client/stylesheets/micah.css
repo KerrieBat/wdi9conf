@@ -1,6 +1,11 @@
 
+.keynote {
+
+}
+
 .speakers {
-  height: 2em;
-  width: 2em;
+  float: left;
+  height: 10em;
+  width: 10em;
   border: 2px solid black;
 }
