@@ -1,0 +1,78 @@
+
+/*styling for intro*/
+.header-wrapper {
+height: 100% !important;
+
+}
+.footer {
+  text-align: center;
+  background-color: orange;
+  color: black;
+
+
+}
+.contact {
+background-color: pink;
+}
+
+.slider {
+
+}
+.header {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 30vh !important;
+
+}
+.title {
+
+height: 100%;
+width: 100%;
+color: white;
+font-size: 3em;
+font-weight: bold;
+
+}
+.tagline {
+
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+
+}
+img {
+
+}
+
+.crown {
+  width: 40px;
+  height: 40px;
+
+
+}
+
+
+
+
+
+
+/*styling for mentorship*/
+.mentorship-wrapper {
+
+}
+.ment-menu {
+  font-size: 1.3em;
+
+}
+.mentor {
+  color: green;
+
+
+}
+.ment-type {
+  padding: 2rem !important;
+}
+.ment-blurb {
+font-size: 120% !important;
+}
