@@ -1,88 +1,9 @@
+@import "speakers.css";
+@import "about.css"
+
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-.keynote {
-  display: flex;
-  justify-content: center;
-}
-
-#keynote {
-  height: 12em;
-  width: 12em;
-}
-
-.otherSpeakers {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.speakers-title {
-  text-align: center;
-}
-
-.speaker-blurb {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 10em;
-  width: 10em;
-  border-radius: 5px;
-  overflow: hidden;
-  visibility: hidden;
-  opacity: 0;
-
-  /*------TRANSITIONS--------*/
-  transition: all .1s ease;
-  -webkit-transition: all .1s ease;
-}
-
-.speaker-blurb p {
-  color: orange;
-}
-
-.speaker {
-  /*------DISPLAY------*/
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 10em;
-  width: 10em;
-  overflow: hidden;
-  margin: 1em;
-
-  /*------BACKGROUND-------*/
-  background-image: url(https://organicthemes.com/demo/profile/files/2012/12/profile_img.png);
-  background-size: cover;
-  /*background-blend-mode: saturation;*/
-
-  /*------TRANSITIONS--------*/
-  transition: all .1s ease;
-  -webkit-transition: all .1s ease;
-}
-
-.speaker p {
-  color: snow;
-  position: absolute;
-  display: block;
-  bottom: -3em;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-}
-
-.speaker:hover {
-  background-color: orange;
-  background-blend-mode: luminosity;
-}
-
-.speaker:hover p {
-  bottom: 0em;
-}
-
-.speaker:hover + .speaker-blurb{
-  visibility: visible;
-  opacity: 1;
 }
