@@ -1,6 +1,20 @@
 
-div.container.keynote
-  - var x = 6;
-      - for (var i=1; i<=x; i++) {
-        div.speakers
-      - }
+- var keynotes = {'Joe Giomani':'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem.', 'Alice Croft':'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem.', 'Daniel Keller':'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem.'}
+
+- var otherSpeakers = {'Rose Antigua': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.', 'Roger Martin': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.', 'Larry Jenkins': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.', 'Joe Peabody': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.', 'Daisy Jones': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.', 'Laura Wetherall':'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.'}
+
+.speakers-title.container
+  p Speakers
+.keynote
+  each val, index in keynotes
+    .speaker#keynote
+      p= index
+    .speaker-blurb#keynote
+      p= val
+.divider
+.otherSpeakers.container
+  each val, index in otherSpeakers
+    .speaker
+      p= index
+    .speaker-blurb
+      p= val
