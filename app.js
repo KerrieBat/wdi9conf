@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var ticketRoutes = require('./routes/ticket');
+var loginRoutes = require('./routes/login');
 
 // Configure app
 var app = express();
@@ -24,6 +25,7 @@ app.get('/', function(req, res){
 // API
 var router = express.Router();
 router.use('/tickets', ticketRoutes);
+router.use('/login', loginRoutes);
 app.use('/api', router);
 
 
