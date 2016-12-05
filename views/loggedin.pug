@@ -1,11 +1,45 @@
 extends layout
 
 block content
-  section#userDetails
+  section#userDetails.container
+    h2 Your Details
     p Your Name: #{name}
     p Your Email: #{email}
     p Your Phone: #{phone}
-  section#mentorship.row
+  section#sessionBookings.container
+    h2 Your Schedule
+    div.row
+      div.col.s4
+        input(type="radio" name="sessionOne" value="" id="one-breakout" checked)
+        label(for="one-breakout") Breakout Space
+      div.col.s4
+        input(type="radio" name="sessionOne" value="one" id="one-one")
+        label(for="one-one") Session One
+      div.col.s4
+        input(type="radio" name="sessionOne" value="two" id="one-two")
+        label(for="one-two") Session Two
+    div.row
+      div.col.s4
+        input(type="radio" name="sessionTwo" value="" id="two-breakout" checked)
+        label(for="two-breakout") Breakout Space
+      div.col.s4
+        input(type="radio" name="sessionTwo" value="one" id="two-one")
+        label(for="two-one") Session Three
+      div.col.s4
+        input(type="radio" name="sessionTwo" value="two" id="two-two")
+        label(for="two-two") Session Four
+    div.row
+      div.col.s4
+        input(type="radio" name="sessionThree" value="" id="three-breakout" checked)
+        label(for="three-breakout") Breakout Space
+      div.col.s4
+        input(type="radio" name="sessionThree" value="one" id="three-one")
+        label(for="three-one") Session Five
+      div.col.s4
+        input(type="radio" name="sessionThree" value="two" id="three-two")
+        label(for="three-two") Session Six
+  section#mentorship.row.container
+    h2 Mentoring Program
     div.col.s6.input-field
       p I want to provide mentoring in:
       select(name="mentor")
