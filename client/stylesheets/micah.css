@@ -1,11 +1,9 @@
+@import "speakers.css";
+@import "about.css"
 
-.keynote {
-
+html {
+  box-sizing: border-box;
 }
-
-.speakers {
-  float: left;
-  height: 10em;
-  width: 10em;
-  border: 2px solid black;
+*, *:before, *:after {
+  box-sizing: inherit;
 }

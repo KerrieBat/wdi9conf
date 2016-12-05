@@ -1,3 +1,57 @@
 extends layout
 
 block content
+  section#userDetails
+    p Your Name: #{name}
+    p Your Email: #{email}
+    p Your Phone: #{phone}
+  section#mentorship.row
+    div.col.s6.input-field
+      p I want to provide mentoring in:
+      select(name="mentor")
+        option(value="") None
+        option(value="Android") Android
+        option(value="Angular") Angular
+        option(value="C-sharp") C#
+        option(value="iOS") iOS
+        option(value="Java") Java
+        option(value="JavaScript") JavaScript
+        option(value="LAMP") LAMP Stack
+        option(value="MEAN") MEAN Stack
+        option(value="NodeJS") Node.js
+        option(value="PHP") PHP
+        option(value="Python") Python
+        option(value="React") React
+        option(value="SQL") SQL
+        option(value="Swift") Swift
+        option(value="Wordpress") WordPress
+        option(value="design") Design
+        option(value="analytics") Data Analytics
+        option(value="ux") User Experience
+        option(value="careers") Career Development
+    div.col.s6.input-field
+      p I want to receive mentoring in:
+      select(name="mentee")
+        option(value="") None
+        option(value="Android") Android
+        option(value="Angular") Angular
+        option(value="C-sharp") C#
+        option(value="iOS") iOS
+        option(value="Java") Java
+        option(value="JavaScript") JavaScript
+        option(value="LAMP") LAMP Stack
+        option(value="MEAN") MEAN Stack
+        option(value="NodeJS") Node.js
+        option(value="PHP") PHP
+        option(value="Python") Python
+        option(value="React") React
+        option(value="SQL") SQL
+        option(value="Swift") Swift
+        option(value="Wordpress") WordPress
+        option(value="design") Design
+        option(value="analytics") Data Analytics
+        option(value="ux") User Experience
+        option(value="careers") Career Development
+
+block js
+  script(src="/scripts/dashboard.js")
