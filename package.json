@@ -20,6 +20,17 @@
     "webpack": "^1.13.3"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-connect": "^5.0.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csslint": "^1.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.4",
     "nodemon": "^1.11.0"
   }
 }
