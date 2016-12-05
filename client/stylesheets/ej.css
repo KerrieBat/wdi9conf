@@ -1,3 +1,22 @@
 .heading{
+  text-align: left;
+  margin-top: 5%;
+}
+
+.btn-primary{
+  margin-top: 5%;
+}
+
+
+.nav-wrapper{
+  background-color: lightgray !important;
+}
+
+.r-info{
+  line-height: 2.5em;
+}
+
+
+.r-heading{
   text-align: center;
 }
