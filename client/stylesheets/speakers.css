@@ -1,12 +1,14 @@
 
-.keynote {
-  display: flex;
-  justify-content: center;
+.speakers-page {
+  height: 110vh;
+  overflow: scroll;
+  background-image: url('../images/background_circle.svg');
+  background-size: 20px 20px;
 }
 
-#keynote {
-  height: 12em;
-  width: 12em;
+.keynote, .keynote2, .keynote3 {
+  display: flex;
+  justify-content: center;
 }
 
 .otherSpeakers {
@@ -16,18 +18,24 @@
 
 .speakers-title {
   text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .speaker-blurb {
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+}
+
+.speaker-blurb, .speaker-empty {
   display: flex;
   justify-content: center;
   position: relative;
-  height: 10em;
-  width: 10em;
-  border-radius: 5px;
+  height: 14em;
+  width: 14em;
   overflow: hidden;
-  visibility: hidden;
-  opacity: 0;
+  padding: .5em;
 
   /*------TRANSITIONS--------*/
   transition: all .1s ease;
@@ -36,6 +44,11 @@
 
 .speaker-blurb p {
   color: orange;
+  margin: 0;
+}
+
+.speaker-empty p {
+  margin: 0;
 }
 
 .speaker {
@@ -43,10 +56,12 @@
   display: flex;
   justify-content: center;
   position: relative;
-  height: 10em;
-  width: 10em;
+  height: 14em;
+  width: 14em;
   overflow: hidden;
-  margin: 1em;
+  padding: .5em;
+  border: 1px solid black;
+
 
   /*------BACKGROUND-------*/
   background-image: url(https://organicthemes.com/demo/profile/files/2012/12/profile_img.png);
