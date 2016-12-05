@@ -1,17 +1,20 @@
 
-h1.heading Register
 
 div.row
-  div.col.m1.l12
-  p.col.s12.m4.l10.center-align Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  div.col.l1
+  h2.heading Register Here
+  div.col.l8
+  h5.col.l3.r-heading Interested in mentorship?
+
+
 
 div.row
-  div.col.m1.l3
+  div.col.l1
   div.col.s12.m10.l6
     form(method="POST" action='/register')
       div.form-group
         label(for='name') Name:
-        input#name.form-control(type='text', placeholder='first and last' name='name')
+        input#name.form-control(type='text', placeholder='First name/last name' name='name')
       div.form-group
         label(for='email') Email:
         input#email.form-control(type='email', placeholder='name@email.com' name='email')
@@ -22,7 +25,15 @@ div.row
         label(for='pw2') Confirm Password:
         input#pw2.form-control(type='password' name='confirmPassword')
       div.form-group
-        label(for='mentor') Are you interested in the mentorship program?
-        input#check.form-control(type='checkbox' name='mentor')
-      button.btn.btn-primary(type='submit') Sign up
-  div.col.m1.l3
+        input#check.form-control.filled-in(type='checkbox' name='mentor')
+        label(for='mentor') Sign me up as a mentor
+      div.form-group
+        input#check.form-control.filled-in(type='checkbox' name='mentor')
+        label(for='mentor') Sign me up as a mentee
+      div.form-group
+        input#check.form-control.filled-in(type='checkbox' name='mentor')
+        label(for='mentor') Sign me up for both!
+      button.btn.btn-primary(type='submit') Register
+  div.col.l1
+  p.col.s12.m4.l3.center-align.r-info Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  div.col.l1
