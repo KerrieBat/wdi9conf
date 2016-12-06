@@ -1,10 +1,12 @@
-div.container
-  h2 Already registered?
-  form(method="post", action="/login")
-    div.form-group
-      label(for='login-name') Name:
-      input#login-name.form-control(type='text', placeholder='First name/last name' name='name')
-    div.form-group
-      label(for='login-email') Email:
-      input#login-email.form-control(type='email', placeholder='name@email.com' name='email')
-    button.btn.btn-primary(type='submit') Log In
+div.container-login.row
+  div.col.l1.m1
+  div.col.s12.m10.l6
+    h2 Already registered?
+    form(method="post", action="/login")
+      div.form-group
+        label(for='login-email') Email:
+        input#login-email.form-control(type='email', placeholder='name@email.com' name='email')
+      div.form-group
+        label(for='login-name') Password:
+        input#login-name.form-control(type='password' name='password')
+      button.btn.btn-flat(type='submit') Log In
