@@ -1,16 +1,31 @@
 nav
-  div.nav-wrapper
-    img.brand-logo(src="images/logo1.svg" width="230px")
-    ul(id="nav-mobile" class="right")
-      li(data-menuanchor="about")
-        a(href="#about") About
-      li(data-menuanchor="speaker")
-        a(href="#speakers") Speakers
-      li(data-menuanchor="program")
-        a(href="#program") Program
-      li(data-menuanchor="mentorship")
-        a(href="#mentorship") Mentorship
-      li(data-menuanchor="register")
-        a(href="#register") Register
+  .nav-wrapper
+    a.brand-logo(href='#!') WDC#09
+    a.button-collapse(href='#', data-activates='mobile-demo')
+      i.material-icons menu
+    ul.right.hide-on-med-and-down
       li
-        a(href="#login") Login
+        a(href="#about") About
+      li
+        a(href='#speakers') Speakers
+      li
+        a(href='#program') Program
+      li
+        a(href='#mentorship') Mentorship
+      li
+        a(href='#register') Register
+      li
+        a(href='#login') Login
+    ul#mobile-demo.side-nav
+      li
+        a(href='#about') About
+      li
+        a(href='#speakers') Speakers
+      li
+        a(href='#program') Program
+      li
+        a(href='#mentorship') Mentorship
+      li
+        a(href='#register') Register
+      li
+        a(href='mobile.html') Login
