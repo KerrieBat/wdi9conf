@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 
 router.post('/', (req, res) => {
-  res.sendStatus(501);
+  res.render('loggedin');
 });
 
 module.exports = router;
