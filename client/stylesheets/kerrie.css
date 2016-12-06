@@ -99,3 +99,16 @@ font-family: 'Playfair Display', serif;*/
 .ment-blurb {
 font-size: 120% ;
 }
+
+/*styling for login*/
+.form-control {
+  margin-bottom: 10px !important;
+  height:2rem !important;
+}
+/*styling for register*/
+.register-block {
+  padding-left: 3em !important;
+}
+.mentor-block {
+  padding-right: 3em !important;
+}

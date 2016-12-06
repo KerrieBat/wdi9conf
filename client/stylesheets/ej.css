@@ -11,8 +11,12 @@ body{
 .btn-primary{
   margin-top: 5%;
 }
-
-
+.container-register {
+  padding-top: 2em;
+}
+.container-login {
+  padding-top: 2em;
+}
 .nav-wrapper{
   background-color: lightgray !important;
 }
