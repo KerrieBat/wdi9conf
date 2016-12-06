@@ -1,13 +1,37 @@
+#about {
+}
+
+.about-title {
+  margin-top: 5em;
+}
 
 #about {
   height: 110vh;
 }
 
-#location-map {
-  height: 400px;
+#map {
+  height: 300px;
   width: 100%;
 }
 
-#quote {
+blockquote::first-letter {
   font-size: 200%;
+}
+
+@media (max-width: 600px) {
+
+  .about-location h5 {
+    font-size: 2em;
+  }
+
+  #map {
+    margin-bottom: 2em;
+    height: 200px;
+  }
+
+  .about-title h3 {
+    font-size: 2em;
+  }
+
+
 }

@@ -1,32 +1,51 @@
 
-var larry = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit'
+var larry = 'larry'
+var martin = 'martin'
+var windowWidth = $(window).width()
 
-var martin = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit'
+function hover() {
 
-$( "#lone-speaker" ).hover(
-  function() {
-    $('#lone-blurb').html(larry).css({
-      'visibility': 'visible',
-      'opacity': 1,
-      'color': 'orange'
-      });
-  }, function() {
-    $('#lone-blurb').css({
-      'visibility': 'hidden',
-      'opacity': 0,
-      });
-})
+  if (windowWidth > 600) {
 
-$( "#middle-speaker" ).hover(
-  function() {
+    $( "#lone-speaker" ).hover(
+      function() {
+        $('#lone-blurb').html(larry).css({
+          'visibility': 'visible',
+          'opacity': 1,
+          'color': 'orange'
+          });
+      }, function() {
+        $('#lone-blurb').css({
+          'visibility': 'hidden',
+          'opacity': 0,
+        }).html(martin);
+    })
+
+    $( "#middle-speaker" ).hover(
+      function() {
+        $('#lone-blurb').html(martin).css({
+          'visibility': 'visible',
+          'opacity': 1,
+          'color': 'orange'
+          });
+      }, function() {
+        $('#lone-blurb').css({
+          'visibility': 'hidden',
+          'opacity': 0,
+          });
+    })
+  } else {
     $('#lone-blurb').html(martin).css({
       'visibility': 'visible',
-      'opacity': 1,
-      'color': 'orange'
-      });
-  }, function() {
-    $('#lone-blurb').css({
-      'visibility': 'hidden',
-      'opacity': 0,
-      });
-})
+      'opacity': 1
+    });
+    $( "#lone-speaker" ).hover(function(){}, function(){})
+    $( "#middle-speaker" ).hover(function(){},function(){})
+  }
+};
+
+hover();
+$(window).resize(function() {
+  console.log('resize');
+  hover();
+});
