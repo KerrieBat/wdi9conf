@@ -20,3 +20,7 @@
 .r-heading{
   text-align: center;
 }
+
+.nav-wrapper{
+  z-index:99;
+}
