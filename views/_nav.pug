@@ -1,16 +1,16 @@
 nav
   div.nav-wrapper
     img.brand-logo(src="images/logo1.svg" width="230px")
-    ul#nav-mobile.right.hide-on-med-and-down
-      li
+    ul(id="nav-mobile" class="right")
+      li(data-menuanchor="about")
         a(href="#about") About
-      li
+      li(data-menuanchor="speaker")
         a(href="#speakers") Speakers
-      li
+      li(data-menuanchor="program")
         a(href="#program") Program
-      li
+      li(data-menuanchor="mentorship")
         a(href="#mentorship") Mentorship
-      li
+      li(data-menuanchor="register")
         a(href="#register") Register
       li
         a(href="#login") Login

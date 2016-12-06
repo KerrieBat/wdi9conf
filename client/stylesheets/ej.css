@@ -1,6 +1,7 @@
-.heading{
+.r-heading{
   text-align: left;
-  margin-top: 5%;
+  margin:0;
+  margin-bottom: 5%;
 }
 
 .btn-primary{
@@ -13,10 +14,17 @@
 }
 
 .r-info{
-  line-height: 2.5em;
+  line-height: 2.8em;
 }
 
-
 .r-heading{
-  text-align: center;
+  margin-bottom: 5%;
+}
+
+.r-heading-small{
+  margin-bottom: 6%;
+}
+
+.nav-wrapper{
+  z-index:99;
 }
