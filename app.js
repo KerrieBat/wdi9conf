@@ -24,7 +24,7 @@ app.get('/', function(req, res){
 
 // API
 var router = express.Router();
-router.use('/api/tickets', ticketRoutes);
+router.use('/register', ticketRoutes);
 router.use('/login', loginRoutes);
 app.use('/', router);
 
