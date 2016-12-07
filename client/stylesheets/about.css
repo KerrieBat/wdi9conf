@@ -18,7 +18,12 @@ blockquote::first-letter {
   font-size: 200%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+
+  #about {
+    height: auto;
+  }
+
 
   .about-location h5 {
     font-size: 2em;

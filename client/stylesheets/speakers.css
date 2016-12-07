@@ -120,7 +120,7 @@ blockquote::first-letter {
 
 /*------------------------------------*/
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
   .speakers-page {
     height: auto;
@@ -139,8 +139,13 @@ blockquote::first-letter {
 
   .speaker-blurb p, .hidden-blurb p {
     color: black;
-    font-size: 1.3em;
-    right: 2em;
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .speaker p {
+    left: 25%;
+    bottom: 0;
   }
 
   .speaker, .speaker-blurb, .hidden-blurb {
@@ -153,6 +158,14 @@ blockquote::first-letter {
   .speaker p {
     bottom: 0em;
     font-size: 2em;
+  }
+
+  .speaker:hover + .speaker-blurb p{
+    color: orange;
+  }
+
+  .speaker:hover + .hidden-blurb p{
+    color: orange;
   }
 
   .right {
