@@ -7,3 +7,6 @@ local_db.config.js
 # Generate files
 public/scripts
 public/stylesheets
+
+# OSX Temp files
+.DS_Store
