@@ -147,3 +147,7 @@ font-size: 120% ;
 #mentorship {
 
 }
+label {
+  font-size: 1.4em !important;
+  color: white !important;
+}
