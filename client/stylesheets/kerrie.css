@@ -89,6 +89,8 @@ font-family: 'Playfair Display', serif;*/
 
 .ment-menu {
   font-size: 1.3em;
+  margin-left: 2em !important;
+  margin-right: 1em !important;
 }
 .mentor {
   color: maroon;
