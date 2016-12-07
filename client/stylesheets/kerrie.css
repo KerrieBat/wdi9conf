@@ -112,3 +112,15 @@ font-size: 120% ;
 .mentor-block {
   padding-right: 3em !important;
 }
+.login-block {
+  padding-left: 3em !important;
+}
+.btn-flat {
+  margin-left: 0 !important;
+  padding: 0 !important;
+}
+
+/*styling for dashboard*/
+#mentorship {
+
+}
