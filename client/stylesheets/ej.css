@@ -6,8 +6,8 @@ body{
 
 .r-heading{
   text-align: left;
-  margin:0;
   margin-bottom: 5%;
+  margin-top: 0 !important;
 }
 
 .btn-primary{
@@ -15,21 +15,17 @@ body{
 }
 .container-register {
   padding-top: 2em;
+  margin-bottom: 0 !important;
 }
-.container-login {
-  padding-top: 2em;
+container-login {
+  /*padding-top: 2em;*/
 }
 
 .r-info{
   line-height: 2.8em;
 }
-
-.r-heading{
-  margin-bottom: 5%;
-}
-
 .r-heading-small{
-  margin-bottom: 6%;
+  margin-top: 0 !important;
 }
 
 .headers{
