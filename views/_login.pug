@@ -2,6 +2,9 @@ div.container-login.row
   div.col.s12.m10.l6.login-block
     h2.headers Already Registered?
     form(method="post", action="/login")
+      if login_error
+        div.form-group
+          p= login_error
       div.form-group
         label(for='login-email') Email:
         input#login-email.form-control(type='email', placeholder='name@email.com' name='email')

@@ -1,40 +1,45 @@
 
-- var keynotes = {'Joe Giomani':'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem.', 'Alice Croft':'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem.'}
-
-- var otherSpeakers = {'Rose Antigua': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.', 'Roger Martin': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.' }
-
-- var loneSpeaker = {'Larry Jenkins': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.'}
-
-- var otherSpeakers2 = {'Joe Peabody': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.', 'Daisy Jones': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.'}
-
 .speakers-page
   .speakers-title
     h2.headers Speakers
   .keynote
-    .speaker-empty
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.
-    each val, index in keynotes
-      .speaker
-        p= index
-      .speaker-blurb
-        p= val
+    .empty-background
+      p Speakers info
+
+    .speaker.right
+      p Joe Giomani
+    .speaker-blurb
+      p Joe Giomani
+
+    .speaker
+      p Alice Croft
+    .speaker-blurb
+      p Alice Croft
 
   .keynote2
-    .speaker
+    .speaker.right
       p Rose Antigua
     .speaker-blurb
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
+      p Rose Antigua
+
     .speaker#middle-speaker
       p Roger Martin
     .speaker-blurb#lone-blurb
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit.
-    .speaker#lone-speaker
+      p Roger Martin
+
+    .speaker#lone-speaker.right
+      p Larry Jenkins
+    .hidden-blurb
       p Larry Jenkins
 
   .keynote3
     .speaker-empty
-    each val, index in otherSpeakers2
-      .speaker
-        p= index
-      .speaker-blurb
-        p= val
+    .speaker
+      p Billy Green
+    .speaker-blurb
+      p Joe Giomani
+
+    .speaker.right
+      p Sue Yellen
+    .speaker-blurb
+      p Alice Croft
