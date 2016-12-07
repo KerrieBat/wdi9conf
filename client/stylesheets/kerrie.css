@@ -39,17 +39,17 @@ font-family: 'Playfair Display', serif;*/
   z-index: 990;
   left:50%;
   top:50%;
-  margin-top: -250px; /* Half the height */
+  margin-top: -200px; /* Half the height */
   margin-left: -475px; /* Half the width */
 }
 
 .bwphoto{
   position:relative;
-  height:800px;
+  height:900px;
 }
 
 .bwphoto-container{
-  height: 800px;
+  height: 900px;
   width: 100%;
   overflow: hidden;
 }
@@ -88,6 +88,7 @@ font-family: 'Playfair Display', serif;*/
   background-color: pink;
   padding-bottom: 1em;
   padding-top: 1em;
+  font-size: 1.2em;
 }
 
 .fb{
@@ -109,7 +110,7 @@ font-family: 'Playfair Display', serif;*/
 
 /*sponsors*/
 .logo {
-  height: 8em;
+  height: 10em;
   position: relative;
   display: flex;
   justify-content: center;
