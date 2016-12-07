@@ -7,23 +7,20 @@ div.row.container-register
         div.form-group
           p= error
       div.form-group.row
-        div.col.s6
+        div.col.s6.name
           label(for='first-name') First name:
-          input#first-name.form-control(type='text', placeholder='First name' name='first_name' value=first_name)
-        div.col.s6
+          input#first-name.form-control(type='text', placeholder='' name='first_name' value=first_name)
+        div.col.s6.name
           label(for='last-name') Last name:
-          input#last-name.form-control(type='text', placeholder='Last name' name='last_name' value=last_name)
+          input#last-name.form-control(type='text', placeholder='' name='last_name' value=last_name)
       div.form-group
         label(for='email') Email:
-        input#email.form-control(type='email', placeholder='name@email.com' name='email' value=email)
+        input#email.form-control(type='email', placeholder='' name='email' value=email)
       div.form-group
         label(for='pw') Password:
         input#pw.form-control(type='password' name='password')
-      div.form-group
-        input#check.form-control.filled-in(type='checkbox' name='mentor')
-        label(for='mentor') I'm interested in the mentorship program
-      button.btn.left-align.orange-text.btn-flat(type='submit') Register
+      button.btn.left-align.black-text.btn-flat(type='submit') Register
   div.col.m5.l5.left-align.mentor-block.hide-on-small-only
-    h5.r-heading-small.headers Interested in mentoring?
-    p.r-info We are excited to announce the launch of the WDI-Conf mentorship program. Have you ever wanted to find a mentor but didn't know where to look? Are you looking for a mentor in the industry but outside your workplace? Are you excited about coding, do you want to pass it on? Do you want to help and encourage the new kids on the block? Just sign up for the program when you register!
+    h4.headers Interested in mentoring?
+    p.r-info We are excited to announce the launch of the WDI-Conf mentorship program. Have you ever wanted to find a mentor but didn't know where to look? Are you looking for a mentor in the industry but outside your workplace? Do you want to help and encourage the new kids on the block? Just sign up for the program when you register!
   div.col.l1.m1
