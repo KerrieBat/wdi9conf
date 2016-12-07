@@ -64,3 +64,9 @@ li a:hover{
 .row{
   margin:0 !important;
 }
+
+/*PROGRAM*/
+
+#staggered-test li {
+  opacity:0;
+}

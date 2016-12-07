@@ -37,16 +37,37 @@ font-family: 'Playfair Display', serif;*/
   width:950px;
   position:absolute;
   z-index: 990;
-  left:19%;
-  top:27%;
+  left:50%;
+  top:50%;
+  margin-top: -250px; /* Half the height */
+  margin-left: -475px; /* Half the width */
 }
 
-@media only screen and (max-width: 680px){
+.bwphoto{
+  position:relative;
+  height:800px;
+}
+
+.bwphoto-container{
+  height: 800px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 992px){
   .logo-large{
-    width:450px;
+    width:700px;
+    margin-top: -225px; /* Half the height */
+    margin-left: -350px; /* Half the width */
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .logo-large{
+    width:350px;
     position:absolute;
     z-index: 990;
-    left:13%;
+    left:10%;
     top:27%;
   }
 }
@@ -69,7 +90,7 @@ font-family: 'Playfair Display', serif;*/
   padding-top: 1em;
 }
 
-.fb {
+.fb{
   max-width: 100%;
   max-height: 100%;
   height: auto;
@@ -108,6 +129,10 @@ font-family: 'Playfair Display', serif;*/
 
 /*styling for mentorship*/
 
+.mentor{
+  background-color: #e8e73d;
+}
+
 .ment-menu {
   font-size: 1.3em;
 }
@@ -118,7 +143,8 @@ font-family: 'Playfair Display', serif;*/
   padding: 2rem;
 }
 .ment-blurb {
-font-size: 120% ;
+  font-size: 120% ;
+  line-height: 2em;
 }
 
 /*styling for login*/
