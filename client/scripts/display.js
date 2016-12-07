@@ -6,7 +6,16 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
     $('.slider').slider({indicator: false});
     $(".button-collapse").sideNav();
+    //onclick of nav items hide sidenav
     $('.parallax').parallax();
+
+    var options = [{
+      selector: '#staggered-test',
+      offset: 800,
+      callback:function(el) {Materialize.showStaggeredList($(el)); }
+    }];
+
+    Materialize.scrollFire(options);
   });
   console.log('here are the queens of GA');
 
