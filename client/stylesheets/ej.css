@@ -2,6 +2,8 @@ body{
   background-color:#f4f5f7;
 }
 
+/*Register Page*/
+
 .r-heading{
   text-align: left;
   margin:0;
@@ -17,9 +19,6 @@ body{
 .container-login {
   padding-top: 2em;
 }
-.nav-wrapper{
-  background-color: lightgray !important;
-}
 
 .r-info{
   line-height: 2.8em;
@@ -33,11 +32,39 @@ body{
   margin-bottom: 6%;
 }
 
+.headers{
+  font-family: 'Inconsolata', monospace;
+}
+
 /*NAV WRAPPER*/
 
-.hidden{
-     opacity:0;
+
+#sidenav-overlay{
+  z-index: 988 !important;
 }
-.visible{
-     opacity:1;
+
+.nav-wrapper{
+  background-color: lightgray !important;
+}
+
+.parallax-container {
+    height: 400px !important;
+}
+
+.tag{
+  background-color: #e8e73d;
+}
+
+li a{
+  color: #414244 !important;
+}
+
+li a:hover{
+  color:white!important;
+}
+
+/*FOOTER*/
+
+.row{
+  margin:0 !important;
 }

@@ -1,7 +1,7 @@
 
 /*styling for intro*/
 .header-wrapper {
-height: 100% !important;
+  height: 100% !important;
 }
 
 /*font-family: 'Slabo 27px', serif;
@@ -16,20 +16,41 @@ font-family: 'Playfair Display', serif;*/
   display: inline-block;
   width: 100%;
   height: 40vh !important;
+
 }
 .title {
   height: 100%;
   width: 100%;
   color: white;
-  font-size: 5em;
+  font-size: 6em;
   font-weight: bold;
   font-family: 'Roboto Mono', monospace;
 }
+
 .tagline {
   color: white;
-  font-size: 3em;
+  font-size: 4em;
   font-family: 'Roboto Mono', monospace;
 }
+
+.logo-large{
+  width:950px;
+  position:absolute;
+  z-index: 990;
+  left:19%;
+  top:27%;
+}
+
+@media only screen and (max-width: 680px){
+  .logo-large{
+    width:450px;
+    position:absolute;
+    z-index: 990;
+    left:13%;
+    top:27%;
+  }
+}
+
 
 /*footer*/
 .footer {
