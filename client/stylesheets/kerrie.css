@@ -122,16 +122,44 @@ font-family: 'Playfair Display', serif;*/
 .ment-blurb {
 font-size: 120% ;
 }
+/*
+color4 light grey #e0e0e0
+color3 dar grey #bdbdbd
+color1 main yellow #e8e73d
+color2 light yellow #f1f07c
+color5 accent blue #68cbe1
+yellow #e8e73d*/
+
+.color4 {
+  background-color: #e0e0e0 !important;
+}
+.color3 {
+  background-color: #bdbdbd !important;
+
+}
+.color1 {
+  background-color: #e8e73d !important;
+}
+.color2 {
+  background-color: #f1f07c !important;
+}
+.color5 {
+  background-color: #68cbe1 !important;
+}
 
 /*styling for login*/
 .form-control {
   margin-bottom: 10px !important;
   height:2rem !important;
-
-
+}
+.container-login {
+  background-color: #e8e73d !important
 }
 
 /*styling for register*/
+.container-register {
+  background-color: #e8e73d !important
+}
 .register-block {
   padding-left: 3em !important;
 }
@@ -154,5 +182,5 @@ font-size: 120% ;
 }
 label {
   font-size: 1.4em !important;
-  color: white !important;
+  color: black !important;
 }

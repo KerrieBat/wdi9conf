@@ -1,5 +1,5 @@
 
-div.row.container-register.yellow.accent-4
+div.row.container-register
   div.col.s12.m6.l6.register-block
     h2.r-heading.headers Register Here
     form(method="POST" action='/register')
@@ -9,13 +9,13 @@ div.row.container-register.yellow.accent-4
       div.form-group.row
         div.col.s6.name
           label(for='first-name') First name:
-          input#first-name.form-control(type='text', placeholder='First name' name='first_name' value=first_name)
+          input#first-name.form-control(type='text', placeholder='' name='first_name' value=first_name)
         div.col.s6.name
           label(for='last-name') Last name:
-          input#last-name.form-control(type='text', placeholder='Last name' name='last_name' value=last_name)
+          input#last-name.form-control(type='text', placeholder='' name='last_name' value=last_name)
       div.form-group
         label(for='email') Email:
-        input#email.form-control(type='email', placeholder='name@email.com' name='email' value=email)
+        input#email.form-control(type='email', placeholder='' name='email' value=email)
       div.form-group
         label(for='pw') Password:
         input#pw.form-control(type='password' name='password')
