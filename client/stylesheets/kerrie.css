@@ -113,6 +113,9 @@ font-family: 'Playfair Display', serif;*/
   margin-left: 2em !important;
   margin-right: 1em !important;
 }
+.collapsable-body{
+  font-size: 0.2em !important;
+}
 .mentor {
   color: maroon;
 }
@@ -124,7 +127,7 @@ font-size: 120% ;
 }
 /*
 color4 light grey #e0e0e0
-color3 dar grey #bdbdbd
+color3 dark grey #bdbdbd
 color1 main yellow #e8e73d
 color2 light yellow #f1f07c
 color5 accent blue #68cbe1
