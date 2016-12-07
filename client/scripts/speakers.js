@@ -1,18 +1,18 @@
 
-var larry = '<p>Larry Jenkins</p>'
-var martin = '<p>Roger Martin</p>'
+var harry = '<p>Harry Aydin</p>'
+var victor = '<p>Bret Victor</p>'
 
 function hover() {
 
   if ($(window).width() > 700) {
-    $('#lone-blurb').html(martin).css({
+    $('#lone-blurb').html(victor).css({
       'visibility': 'hidden',
       'opacity': 0
     });
 
     $( "#lone-speaker" ).hover(
       function() {
-        $('#lone-blurb').html(larry).css({
+        $('#lone-blurb').html(harry).css({
           'visibility': 'visible',
           'opacity': 1,
           'color': 'orange'
