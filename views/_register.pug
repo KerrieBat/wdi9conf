@@ -1,39 +1,29 @@
 
-
-div.row
-  div.col.l1
-  h2.heading Register Here
-  div.col.l8
-  h5.col.l3.r-heading Interested in mentorship?
-
-
-
-div.row
-  div.col.l1
-  div.col.s12.m10.l6
+div.row.container-register
+  div.col.s12.m6.l6.register-block
+    h2.r-heading.headers Register Here
     form(method="POST" action='/register')
-      div.form-group
-        label(for='name') Name:
-        input#name.form-control(type='text', placeholder='First name/last name' name='name')
+      if error
+        div.form-group
+          p= error
+      div.form-group.row
+        div.col.s6
+          label(for='first-name') First name:
+          input#first-name.form-control(type='text', placeholder='First name' name='first_name' value=first_name)
+        div.col.s6
+          label(for='last-name') Last name:
+          input#last-name.form-control(type='text', placeholder='Last name' name='last_name' value=last_name)
       div.form-group
         label(for='email') Email:
-        input#email.form-control(type='email', placeholder='name@email.com' name='email')
+        input#email.form-control(type='email', placeholder='name@email.com' name='email' value=email)
       div.form-group
         label(for='pw') Password:
         input#pw.form-control(type='password' name='password')
       div.form-group
-        label(for='pw2') Confirm Password:
-        input#pw2.form-control(type='password' name='confirmPassword')
-      div.form-group
         input#check.form-control.filled-in(type='checkbox' name='mentor')
-        label(for='mentor') Sign me up as a mentor
-      div.form-group
-        input#check.form-control.filled-in(type='checkbox' name='mentor')
-        label(for='mentor') Sign me up as a mentee
-      div.form-group
-        input#check.form-control.filled-in(type='checkbox' name='mentor')
-        label(for='mentor') Sign me up for both!
-      button.btn.btn-primary(type='submit') Register
-  div.col.l1
-  p.col.s12.m4.l3.left-align.r-info We are excited to announce the launch of the WDI-Conf mentorship program. Have you ever wanted to find a mentor but didn't know where to look? Are you looking for a mentor in the industry but outside your workplace? Are you excited about coding, do you want to pass it on? Do you want to help and encourage the new kids on the block? Just sign up for the program when you register!
-  div.col.l1
+        label(for='mentor') I'm interested in the mentorship program
+      button.btn.left-align.orange-text.btn-flat(type='submit') Register
+  div.col.m5.l5.left-align.mentor-block.hide-on-small-only
+    h5.r-heading-small.headers Interested in mentoring?
+    p.r-info We are excited to announce the launch of the WDI-Conf mentorship program. Have you ever wanted to find a mentor but didn't know where to look? Are you looking for a mentor in the industry but outside your workplace? Are you excited about coding, do you want to pass it on? Do you want to help and encourage the new kids on the block? Just sign up for the program when you register!
+  div.col.l1.m1

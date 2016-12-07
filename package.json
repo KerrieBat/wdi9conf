@@ -12,14 +12,29 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
     "express": "^4.14.0",
+    "knex": "^0.12.6",
     "node-sass": "^3.13.0",
+    "pg": "^6.1.0",
     "pug": "^2.0.0-beta6",
     "webpack": "^1.13.3"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-connect": "^5.0.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csslint": "^1.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.4",
     "nodemon": "^1.11.0"
   }
 }

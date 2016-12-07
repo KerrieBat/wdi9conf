@@ -1,22 +1,66 @@
-.heading{
+body{
+  background-color:#f4f5f7;
+}
+
+/*Register Page*/
+
+.r-heading{
   text-align: left;
-  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-top: 0 !important;
 }
 
 .btn-primary{
   margin-top: 5%;
 }
+.container-register {
+  padding-top: 2em;
+  margin-bottom: 0 !important;
+}
+container-login {
+  /*padding-top: 2em;*/
+}
 
+.r-info{
+  line-height: 2.8em;
+}
+.r-heading-small{
+  margin-top: 0 !important;
+}
+
+.headers{
+  font-family: 'Inconsolata', monospace;
+}
+
+/*NAV WRAPPER*/
+
+
+#sidenav-overlay{
+  z-index: 988 !important;
+}
 
 .nav-wrapper{
   background-color: lightgray !important;
 }
 
-.r-info{
-  line-height: 2.5em;
+.parallax-container {
+    height: 400px !important;
 }
 
+.tag{
+  background-color: #e8e73d;
+}
 
-.r-heading{
-  text-align: center;
+li a{
+  color: #414244 !important;
+}
+
+li a:hover{
+  color:white!important;
+}
+
+/*FOOTER*/
+
+.row{
+  margin:0 !important;
 }

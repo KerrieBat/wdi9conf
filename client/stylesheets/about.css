@@ -1,12 +1,10 @@
-#about {
-}
 
 .about-title {
   margin-top: 5em;
 }
-
 #about {
   height: 110vh;
+  margin-top: 2%;
 }
 
 #map {

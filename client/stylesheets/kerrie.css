@@ -1,8 +1,14 @@
 
 /*styling for intro*/
 .header-wrapper {
-height: 100% !important;
+  height: 100% !important;
 }
+
+/*font-family: 'Slabo 27px', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Playfair Display', serif;*/
 
 /*header*/
 .header {
@@ -10,24 +16,45 @@ height: 100% !important;
   display: inline-block;
   width: 100%;
   height: 40vh !important;
+
 }
 .title {
-height: 100%;
-width: 100%;
-color: white;
-font-size: 5em;
-font-weight: bold;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 6em;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
 }
+
 .tagline {
   color: white;
   font-size: 4em;
-  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
 }
+
+.logo-large{
+  width:950px;
+  position:absolute;
+  z-index: 990;
+  left:19%;
+  top:27%;
+}
+
+@media only screen and (max-width: 680px){
+  .logo-large{
+    width:450px;
+    position:absolute;
+    z-index: 990;
+    left:13%;
+    top:27%;
+  }
+}
+
 
 /*footer*/
 .footer {
   text-align: center;
-  background-color: orange;
   color: black;
 }
 .crown {
@@ -37,16 +64,18 @@ font-weight: bold;
 
 /*contact*/
 .contact {
-background-color: pink;
-padding-bottom: 1em;
-padding-top: 1em;
+  background-color: pink;
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
+
 .fb {
   max-width: 100%;
   max-height: 100%;
   height: auto;
   width: auto;
 }
+
 .social {
   height: 2em;
   position: relative;
@@ -81,13 +110,44 @@ padding-top: 1em;
 
 .ment-menu {
   font-size: 1.3em;
+  margin-left: 2em !important;
+  margin-right: 1em !important;
 }
 .mentor {
   color: maroon;
 }
 .ment-type {
-  padding: 2rem !important;
+  padding: 2rem;
 }
 .ment-blurb {
-font-size: 120% !important;
+font-size: 120% ;
+}
+
+/*styling for login*/
+.form-control {
+  margin-bottom: 10px !important;
+  height:2rem !important;
+}
+/*styling for register*/
+.register-block {
+  padding-left: 3em !important;
+}
+.mentor-block {
+  padding-right: 3em !important;
+}
+.login-block {
+  padding-left: 3em !important;
+}
+.btn-flat {
+  margin-left: 0 !important;
+  padding: 0 !important;
+}
+
+/*styling for dashboard*/
+#mentorship {
+
+}
+label {
+  font-size: 1.4em !important;
+  color: white !important;
 }

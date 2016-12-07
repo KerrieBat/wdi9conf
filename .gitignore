@@ -1,6 +1,9 @@
 # Dependencies
 node_modules/
 
+# Config files
+local_db.config.js
+
 # Generate files
 public/scripts
 public/stylesheets

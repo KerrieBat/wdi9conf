@@ -5,6 +5,8 @@ var loginRoutes = require('./routes/login');
 
 // Configure app
 var app = express();
+var db = require('./db');
+
 app.set('port', process.env.PORT || 8080);
 
 // Middleware to parse post data and attach it to req.body
@@ -17,16 +19,15 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 
 // Routes
-app.get('/', function(req, res){
-
+app.get('/', function(req, res) {
   res.render('index');
 });
 
 // API
 var router = express.Router();
-router.use('/tickets', ticketRoutes);
+router.use('/register', ticketRoutes);
 router.use('/login', loginRoutes);
-app.use('/api', router);
+app.use('/', router);
 
 
 // Start server
