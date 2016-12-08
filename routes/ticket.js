@@ -43,18 +43,26 @@ function auth(req, res, next){
     if (password.isPasswordValid(details[0], details[1])){
       next();
     } else {
-      res.render('index');
+      res.redirect('/');
     }
 
   } else {
-    res.render('index');
+    res.redirect('/');
   }
 }
 
 router.post('/mentoring', auth, function(req, res){
   console.log("In the mentoring")
-  // params.mentoring
-  // params.learning
+  var details = req.session.user.split("#%");
+  console.log()
+  db('users').where({email: details[0]})
+  .update({
+    mentoring: req.body.mentoring,
+    learning: req.body.learning
+  })
+  .then(function(users){
+    res.redirect('/user');
+  });
 });
 
 router.get('/talks', auth, function(req, res){
