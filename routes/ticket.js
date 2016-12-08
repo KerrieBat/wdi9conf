@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
       if (password.isPasswordValid(req.body.password, user[0].password)){
         //The user has already registered with this password, so just log them in.
         req.session.user = user[0].email + "#%" + password.generateHash(user[0].email);
-        res.render('loggedin', registrant);
+        res.redirect('/user');
       } else {
         registrant.error = "The email address has already been registered to another user."
         res.render('index', registrant);
@@ -30,8 +30,8 @@ router.post('/', (req, res) => {
       db.insert(registrant).into('users')
       .then(function(id){
         console.log(id)
-        req.session.user = user[0].email + "#%" + password.generateHash(user[0].email);
-        res.render('loggedin', registrant);
+        req.session.user = registrant[0].email + "#%" + password.generateHash(registrant[0].email);
+        res.redirect('/user');
       })
     }
   });
