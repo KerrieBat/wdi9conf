@@ -6,6 +6,7 @@ var db = require('../db.js');
 var password = require('./password');
 
 router.post('/', (req, res) => {
+  console.log(req.session)
   var registrant = {
     email: req.body.email
   }
