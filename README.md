@@ -17,6 +17,8 @@ Clone your fork
 npm install
 cp local_db.config.js.template local_db.config.js
 Edit login credentials in local_db.config.js
+Create PostgreSQL database wdiconf
 ./node_modules/.bin/knex migrate:latest
+./node_modules/.bin/knex seed:run
 Run either npm start or npm run dev
 ```
