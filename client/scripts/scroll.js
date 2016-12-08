@@ -1,17 +1,10 @@
 
-$("#speakers-nav").click(function (){
+$("ul").click('a', function (event){
+  var navItemID = event.target.id
+  // removing '-nav' from ID to scroll to appropriate section
+  var section = navItemID.split('-')[0]
+  var scrollTo = $('#' + section).offset().top;
   $('html, body').animate({
-    scrollTop: $("#speakers").offset().top
-   }, 2000);
+    scrollTop: scrollTo
+  }, 500);
 });
-
-
-var introLoc = $('#intro').offset();
-var aboutLoc = $('#about').offset();
-var speakersLoc = $('#speakers').offset();
-var programLoc = $('#program').offset();
-var mentorLoc = $('#mentor').offset();
-var registerLoc = $('#register').offset();
-
-console.log(introLoc);
-console.log(aboutLoc);
