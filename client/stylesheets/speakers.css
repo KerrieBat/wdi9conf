@@ -78,6 +78,7 @@
   width: 14em;
   overflow: hidden;
   padding: .5em;
+  border: .3px solid black;
 
   /*------TRANSITIONS--------*/
   transition: all .1s ease;
