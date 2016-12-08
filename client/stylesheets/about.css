@@ -16,7 +16,9 @@ blockquote::first-letter {
   font-size: 200%;
 }
 
-@media (max-width: 800px) {
+/*-----------------------------------*/
+
+@media (max-width: 700px) {
 
   #about {
     height: auto;
@@ -29,7 +31,7 @@ blockquote::first-letter {
 
   #map {
     margin-bottom: 2em;
-    height: 200px;
+    height: 230px;
   }
 
   .about-title h3 {

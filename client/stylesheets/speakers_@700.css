@@ -1,0 +1,73 @@
+
+@media (max-width: 700px) {
+
+  .speakers-page {
+    height: auto;
+  }
+
+  .keynote, .keynote2, .keynote3 {
+  display: block;
+  }
+
+  .speaker-blurb {
+    visibility: visible;
+    opacity: 1;
+    background-image: url('../images/background_circle.svg');
+    background-size: 20px 20px;
+  }
+
+  .speaker-blurb p, .hidden-blurb p {
+    color: black;
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .speaker p {
+    left: 25%;
+    bottom: 0;
+  }
+
+  .speaker, .speaker-blurb, .hidden-blurb {
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    float: left;
+  }
+
+  .speaker p {
+    bottom: 0em;
+    font-size: 2em;
+  }
+
+  .speaker:hover + .speaker-blurb p{
+    color: orange;
+  }
+
+  .speaker:hover + .hidden-blurb p{
+    color: orange;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .hidden-blurb {
+    background-color: white;
+    background-image: url('../images/background_circle.svg');
+    background-size: 20px 20px;
+  }
+
+  .speaker-empty {
+    display: none;
+  }
+
+  .empty-background {
+    width: 100%;
+  }
+
+  .hidden-blurb {
+    display: block;
+  }
+
+
+}
