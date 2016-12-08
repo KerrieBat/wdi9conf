@@ -154,7 +154,7 @@ font-family: 'Playfair Display', serif;*/
   padding: 2rem;
 }
 .ment-blurb {
-  font-size: 120% ;
+  font-size: 1.8em;
   line-height: 2em;
 }
 /*
@@ -214,6 +214,12 @@ yellow #e8e73d*/
 /*styling for dashboard*/
 #mentorship {
 
+}
+.userContact {
+  font-size: 1.8em;
+}
+.mentStyle {
+  font-size: 1.4em;
 }
 label {
   font-size: 1.4em !important;
