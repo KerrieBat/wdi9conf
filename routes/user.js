@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 
       // Find potential mentors for current user
       db('users').where({
-        mentoring: data.user.learning
+        mentoring: data.user.learning || ""
       })
       .andWhereNot({
         id: data.user.id
@@ -29,7 +29,7 @@ router.get('/', (req, res) => {
       .then((mentors) => {
         data.mentors = mentors;
         return db('users').where({
-          learning: data.user.mentoring
+          learning: data.user.mentoring || ""
         })
         .andWhereNot({
           id: data.user.id
