@@ -10,8 +10,36 @@ router.get('/', (req, res) => {
     db('users').where({
       email: email
     })
-    .then(user => {
-      res.render('loggedin', user[0]);
+    .then(results => {
+      var data = {
+        user: null,
+        mentors: null,
+        mentees: null
+      };
+      data.user = results[0];
+
+      // Find potential mentors for current user
+      db('users').where({
+        mentoring: data.user.learning
+      })
+      .andWhereNot({
+        id: data.user.id
+      })
+      // Find potential mentees for current user
+      .then((mentors) => {
+        data.mentors = mentors;
+        return db('users').where({
+          learning: data.user.mentoring
+        })
+        .andWhereNot({
+          id: data.user.id
+        });
+      })
+      // Render dashboard
+      .then((mentees) => {
+        data.mentees = mentees;
+        res.render('loggedin', data);
+      });
     });
   }
   else {
