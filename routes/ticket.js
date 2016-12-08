@@ -58,7 +58,8 @@ router.post('/mentoring', auth, function(req, res){
   db('users').where({email: details[0]})
   .update({
     mentoring: req.body.mentoring,
-    learning: req.body.learning
+    learning: req.body.learning,
+    contact_info: req.body.contact_info
   })
   .then(function(users){
     res.redirect('/user');
