@@ -46,7 +46,7 @@ $(document).ready(function(){
     }
     var scrollTo = $('#' + section).offset().top;
     $('html, body').animate({
-      scrollTop: scrollTo
+      scrollTop: scrollTo-55
     }, 500);
   });
 
