@@ -37,16 +37,28 @@ router.post('/', (req, res) => {
   });
 });
 
-// function auth(req, res, next){
-//
-// }
+function auth(req, res, next){
+  if (req.session.user){
+    var details = req.session.user.split("#%");
+    if (password.isPasswordValid(details[0], details[1])){
+      next();
+    } else {
+      res.render('index');
+    }
 
-router.post('/mentoring', function(){
+  } else {
+    res.render('index');
+  }
+}
+
+router.post('/mentoring', auth, function(req, res){
+  console.log("In the mentoring")
   // params.mentoring
   // params.learning
 });
 
-router.post('/talks', function(){
+router.get('/talks', auth, function(req, res){
+  console.log("in the talks")
   // params.sessionOne
   // params.sessionTwo
   // params.sessionThree
