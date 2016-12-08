@@ -1,14 +1,20 @@
+/*font-family: 'Slabo 27px', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Playfair Display', serif;
+
+color4 light grey #e0e0e0
+color3 dark grey #bdbdbd
+color1 main yellow #e8e73d
+color2 light yellow #f1f07c
+color5 accent blue #68cbe1
+yellow #e8e73d*/
 
 /*styling for intro*/
 .header-wrapper {
   height: 100% !important;
 }
-
-/*font-family: 'Slabo 27px', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Inconsolata', monospace;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Playfair Display', serif;*/
 
 /*header*/
 .header {
@@ -78,14 +84,13 @@ font-family: 'Playfair Display', serif;*/
     margin-left: 0.5em !important;
     margin-right: 0 !important;
   }
-
 }
-
 
 /*footer*/
 .footer {
   text-align: center;
   color: black;
+  padding:20px;
 }
 .crown {
   width: 40px;
@@ -108,12 +113,12 @@ font-family: 'Playfair Display', serif;*/
 }
 
 .social {
-  height: 2em;
+  height: 1.5em;
   position: relative;
   display: flex;
   justify-content: center;
   overflow: hidden; /* This will do the magic */
-  width: 2em;
+  width: 1.5em;
 }
 
 
@@ -143,10 +148,19 @@ font-family: 'Playfair Display', serif;*/
   background-color: #e8e73d;
 }
 
+.mentorship-wrapper{
+  padding-top:50px;
+}
+
+.ment-modal-wrapper{
+  padding-top:10px;
+  padding-bottom: 40px;
+}
+
 .ment-menu {
   font-size: 1.3em;
-  /*margin-left: 2em !important;*/
-  /*margin-right: 4em !important;*/
+  margin-left: 2em !important;
+  margin-right: 4em !important;
 }
 .mentor-deets{
   font-size: 0.9em !important;
@@ -161,13 +175,6 @@ font-family: 'Playfair Display', serif;*/
   font-size: 1.8em;
   line-height: 2em;
 }
-/*
-color4 light grey #e0e0e0
-color3 dark grey #bdbdbd
-color1 main yellow #e8e73d
-color2 light yellow #f1f07c
-color5 accent blue #68cbe1
-yellow #e8e73d*/
 
 .color4 {
   background-color: #e0e0e0 !important;
@@ -185,6 +192,9 @@ yellow #e8e73d*/
 .color5 {
   background-color: #68cbe1 !important;
 }
+.color6 {
+  background-color: white !important;
+}
 
 /*styling for login*/
 .form-control {
@@ -192,7 +202,7 @@ yellow #e8e73d*/
   height:2rem !important;
 }
 .container-login {
-  background-color: #e8e73d !important
+  /*background-color: #e8e73d !important*/
 }
 
 /*styling for register*/
