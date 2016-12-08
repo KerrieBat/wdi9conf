@@ -11,6 +11,7 @@ var store = new KnexSessionStore({
 });//This allows the database to track said users.
 var ticketRoutes = require('./routes/ticket');
 var loginRoutes = require('./routes/login');
+var userRoutes = require('./routes/user');
 
 // Configure app
 
@@ -40,6 +41,7 @@ app.get('/', function(req, res) {
 var router = express.Router();
 router.use('/register', ticketRoutes);
 router.use('/login', loginRoutes);
+router.use('/user', userRoutes);
 app.use('/', router);
 
 

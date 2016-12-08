@@ -4,7 +4,10 @@ node_modules/
 # Config files
 local_db.config.js
 
-# Generate files
+# Log files
+npm-debug.log
+
+# Generated files
 public/scripts
 public/stylesheets
 
