@@ -1,7 +1,7 @@
 
+
 var harry = '<p>Harry Aydin</p>'
 var victor = '<p>Bret Victor</p>'
-
 function responsiveJS() {
 
   if ($(window).width() > 700) {
@@ -42,7 +42,11 @@ function responsiveJS() {
     })
   } else {
 
+$( "#lone-speaker" ).hover(
+  function() {
+
     $( '#lone-blurb' ).html(victor).css({
+
       'visibility': 'visible',
       'opacity': 1,
       });
