@@ -20,6 +20,7 @@ router.post('/', (req, res) => {
     if (user.length > 0){
       if (password.isPasswordValid(req.body.password, user[0].password)){
         //The user has already registered with this password, so just log them in.
+        req.session.user = user[0].email + "#%" + password.generateHash(user[0].email);
         res.render('loggedin', registrant);
       } else {
         registrant.error = "The email address has already been registered to another user."
@@ -29,10 +30,29 @@ router.post('/', (req, res) => {
       db.insert(registrant).into('users')
       .then(function(id){
         console.log(id)
+        req.session.user = user[0].email + "#%" + password.generateHash(user[0].email);
         res.render('loggedin', registrant);
       })
     }
   });
+});
+
+// function auth(req, res, next){
+//
+// }
+
+router.post('/mentoring', function(){
+  // params.mentoring
+  // params.learning
+});
+
+router.post('/talks', function(){
+  // params.sessionOne
+  // params.sessionTwo
+  // params.sessionThree
+  // params.sessionFour
+  // params.sessionFive
+  // params.sessionSix
 });
 
 module.exports = router;
