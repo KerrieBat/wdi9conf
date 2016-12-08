@@ -2,7 +2,13 @@ body{
   background-color:#f4f5f7;
 }
 
+.headers{
+  font-family: 'Inconsolata', monospace;
+  padding:10px;
+}
+
 /*Register Page*/
+
 
 .r-heading{
   text-align: left;
@@ -16,9 +22,11 @@ body{
 .container-register {
   padding-top: 2em;
   margin-bottom: 0 !important;
+  padding: 4%;
 }
-container-login {
-  /*padding-top: 2em;*/
+
+.container-login{
+  padding: 2% 4% 5%;
 }
 
 .r-info{
@@ -26,10 +34,6 @@ container-login {
 }
 .r-heading-small{
   margin-top: 0 !important;
-}
-
-.headers{
-  font-family: 'Inconsolata', monospace;
 }
 
 /*NAV WRAPPER*/
@@ -49,6 +53,7 @@ container-login {
 
 .tag{
   background-color: #e8e73d;
+  padding:25px 5px 5px !important;
 }
 
 li a{
@@ -60,25 +65,6 @@ li a:hover{
 }
 
 /*MAIN HEADING*/
-
-@media only screen and (max-width: 992px){
-  .logo-large{
-    width:700px;
-    margin-top: -225px; /* Half the height */
-    margin-left: -350px; /* Half the width */
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .logo-small{
-    width:280px;
-    position:absolute;
-    z-index: 990;
-    left:50%;
-    top:50%;
-    margin-top: -270px; /* Half the height */
-    margin-left: -140px; /* Half the width */
-  }
 
 .hidden{
   display: none;
@@ -92,76 +78,107 @@ li a:hover{
 
 /*PROGRAM*/
 
-
-#staggered-test li {
-  opacity:0;
-  margin:5%;
+.program{
+  padding:40px;
+  padding-top: 20px;
 }
 
-#staggered-test2 li {
-  opacity:0;
-  margin:5%;
+.program-headers{
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.5em;
 }
-/*#staggered-test2 p, #staggered-test p, .times p{
-  line-height: 2em;
-  font-size: 1.3em;
-}*/
 
 
-#staggered-test2 div, #staggered-test div{
-  min-height: 100px;
+.bold{
+  font-weight:bold;
+}
+
+.times{
+  margin-left:10px;
+}
+
+.times li div{
+  font-size: 75px;
+  min-height: 125px;
+  max-height: 125px;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  background-color: white;
+  max-width: 90px;
+}
+
+.times h4, #room2 h4, #room1 h4{
+  margin-top:40px;
+}
+
+#room1 li, #room2 li  {
+  opacity:0;
+  margin:28px 15px;
+}
+
+#room2 div, #room1 div{
+  min-height: 98px;
+  max-height: 98px;
   font-size: 1.4em;
   font-family: 'Inconsolata', monospace;
   background-color: white;
 }
 
-.times{
-  margin-left:15%;
+#room1 div {
+  color:blue;
+  padding:20px 20px;
+  margin:0;
 }
 
-.times li div{
-  font-size: 5em;
-  min-height: 125px;
-  text-align: center;
-  font-family: 'Inconsolata', monospace;
-  background-color: white;
-  max-width: 90px
+#room2 div {
+  color:#f76262;
+  padding:20px 20px;
+  margin:0;
 }
 
-.times h4, #staggered-test2 h4, #staggered-test h4{
-  margin-top:40px;
-}
-
-#staggered-test div {
-    color:blue;
-    padding:20px 0px;
-    margin:0;
-    text-align: center;
-}
-
-#staggered-test2 div {
-    color:#f76262;
-    padding:20px 0px;
-    margin:0;
-    text-align: center;
-}
-
-
-/*#staggered-test2 div:nth-child(odd), #staggered-test div:nth-child(odd), .times div:nth-child(odd) {
-    color:#f76262;
-    padding:20px 0px;
-    margin:0;
-}*/
 
 .lunch{
   color:black !important;
 }
 
 
-.divide{
-  height:700px;
-  width:5%;
-  position:relative;
-  background-color: #e8e73d;
-  /*border:3px solid #e8e73d;*/
+@media only screen and (max-width: 992px){
+  .times li div{
+    font-size: 45px;
+  }
+
+  #room2 div, #room1 div{
+    min-height: 108px;
+  }
+
+  #room1 li, #room2 li  {
+    opacity:0;
+    margin:18px 5px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .program{
+    padding:20px;
+    padding-top: 20px;
+  }
+
+  .times li div{
+    font-size: 25px;
+    margin:0%;
+    color:black;
+    min-width: 30px;
+  }
+
+  #room1 div, #room2 div{
+    margin:0;
+    text-align: left;
+    line-height: .8em;
+    font-size: 1.2em;
+    padding:10px;
+  }
+
+  #room1, #room2{
+    margin:0;
+  }
 }

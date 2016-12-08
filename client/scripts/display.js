@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     //room 1 animation
     var options = [{
-      selector: '#staggered-test',
+      selector: '#room1',
       offset: 500,
       callback:function(el) {Materialize.showStaggeredList($(el)); }
     }];
@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     //room 2 animation
     var options = [{
-      selector: '#staggered-test2',
+      selector: '#room2',
       offset: 700,
       callback:function(el) {Materialize.showStaggeredList($(el)); }
     }];
