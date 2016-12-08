@@ -1,4 +1,6 @@
 @import "speakers.css";
+@import "speaker_photos.css";
+@import "speakers_@700.css";
 @import "about.css";
 
 html {
