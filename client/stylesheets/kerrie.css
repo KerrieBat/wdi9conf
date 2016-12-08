@@ -70,6 +70,11 @@ font-family: 'Playfair Display', serif;*/
     left:10%;
     top:27%;
   }
+  .ment-menu {
+    font-size: 1em;
+    margin-left: 0.5em !important;
+    margin-right: 0 !important;
+  }
 }
 
 
@@ -137,10 +142,10 @@ font-family: 'Playfair Display', serif;*/
 .ment-menu {
   font-size: 1.3em;
   margin-left: 2em !important;
-  margin-right: 1em !important;
+  margin-right: 4em !important;
 }
-.collapsable-body{
-  font-size: 0.2em !important;
+.mentor-deets{
+  font-size: 0.9em !important;
 }
 .mentor {
   color: maroon;
