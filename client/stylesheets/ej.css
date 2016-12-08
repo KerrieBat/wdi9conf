@@ -61,6 +61,25 @@ li a:hover{
 
 /*MAIN HEADING*/
 
+@media only screen and (max-width: 992px){
+  .logo-large{
+    width:700px;
+    margin-top: -225px; /* Half the height */
+    margin-left: -350px; /* Half the width */
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .logo-small{
+    width:280px;
+    position:absolute;
+    z-index: 990;
+    left:50%;
+    top:50%;
+    margin-top: -270px; /* Half the height */
+    margin-left: -140px; /* Half the width */
+  }
+
 .hidden{
   display: none;
 }
