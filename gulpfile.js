@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const connect = require('gulp-connect');
 const cleanCSS = require("gulp-clean-css");
 const csscomb = require('gulp-csscomb');
 const csslint = require('gulp-csslint');
@@ -62,8 +61,4 @@ gulp.task('watch', function(){
   gulp.watch("client/stylesheets/*.scss", ["sass"]);
 });
 
-gulp.task('server', function(){
-  connect.server();
-});
-
-gulp.task('default', ['watch', 'server']);
+gulp.task('default', ['watch']);
