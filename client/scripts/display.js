@@ -50,5 +50,11 @@ $(document).ready(function(){
     }, 500);
   });
 
+  $('#nav-logo').click( function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 500);
+  });
+
 
   console.log('here are the queens of GA');

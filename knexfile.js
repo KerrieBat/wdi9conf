@@ -1,10 +1,22 @@
 // Update with your config settings.
 
+var localConfig;
+try {
+  localConfig = require('./local_db.config');
+}
+catch (e) {
+  console.error(e.message);
+  console.warn('local_db.config not found. Falling back to process.env.DATABASE_URL');
+  localConfig = {
+    database: process.env.DATABASE_URL
+  };
+}
+
 module.exports = {
 
   development: {
     client: 'postgresql',
-    connection: require('./local_db.config'),
+    connection: localConfig,
     pool: {
       min: 2,
       max: 10

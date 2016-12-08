@@ -5,9 +5,9 @@ block content
     h2 Your Details
     div.row
       div.col.s6
-        p.userContact Your Name: #{first_name} #{last_name}
+        p.userContact Your Name: #{user.first_name} #{user.last_name}
       div.col.s6
-        p.userContact Your Email: #{email}
+        p.userContact Your Email: #{user.email}
   section#sessionBookings.white-text.color3.container
     div.row.valign-wrapper
       div.col.s6
@@ -137,6 +137,22 @@ block content
           option(value="analytics") Data Analytics
           option(value="ux") User Experience
           option(value="careers") Career Development
+    div.row
+      div.col.s12
+        h2 Suggested mentors
+        each mentor in mentors
+          div
+            p= mentor.first_name + ' ' + mentor.last_name
+            p= 'Mentoring: ' + mentor.learning
+            p= mentor.contact_info
+    div.row
+      div.col.s12
+        h2 Suggested mentees
+        each mentee in mentees
+          div
+            p= mentee.first_name + ' ' + mentee.last_name
+            p= 'Learning: ' + mentee.learning
+            p= mentee.contact_info
 
 block js
   script(src="/scripts/dashboard.js")

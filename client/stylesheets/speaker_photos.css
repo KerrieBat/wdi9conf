@@ -5,9 +5,11 @@ font-size: 1.1em;
 
 
 .bg-1 {
-  background-image: url('http://history-computer.com/ModernComputer/Personal/images/alan_kay.jpg');
+  background-image: url('http://www.cl.cam.ac.uk/archive/ksj21/phot011reddNEW.png');
   background-size: cover;
   background-position: top, center;
+  background-color: #FFF;
+  background-blend-mode: luminosity, normal;
 }
 
 .bg-2 {

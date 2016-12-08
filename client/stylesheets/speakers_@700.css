@@ -18,13 +18,13 @@
 
   .speaker-blurb p, .hidden-blurb p {
     color: black;
-    font-size: 1.5em;
     margin: 0;
   }
 
   .speaker p {
     left: 25%;
     bottom: 0;
+    font-size: 2em;
   }
 
   .speaker, .speaker-blurb, .hidden-blurb {
@@ -34,16 +34,7 @@
     float: left;
   }
 
-  .speaker p {
-    bottom: 0em;
-    font-size: 2em;
-  }
-
   .speaker:hover + .speaker-blurb p{
-    color: orange;
-  }
-
-  .speaker:hover + .hidden-blurb p{
     color: orange;
   }
 
@@ -55,6 +46,7 @@
     background-color: white;
     background-image: url('../images/background_circle.svg');
     background-size: 20px 20px;
+    display: block;
   }
 
   .speaker-empty {
@@ -65,8 +57,17 @@
     width: 100%;
   }
 
-  .hidden-blurb {
-    display: block;
+}
+
+@media (max-width: 400px) {
+
+  .speaker-blurb p, .hidden-blurb p {
+  font-size: 1em;
+  }
+
+  .speaker p {
+    font-size: 1em;
+    left: 30%;
   }
 
 

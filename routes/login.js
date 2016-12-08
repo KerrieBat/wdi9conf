@@ -18,7 +18,7 @@ router.post('/', (req, res) => {
       if (password.isPasswordValid(req.body.password, user[0].password)){
         //The user has already registered with this password, so log them in and save to the cookie.
         req.session.user = user[0].email + "#%" + password.generateHash(user[0].email);
-        res.render('loggedin', user[0]);
+        res.redirect('/user');
       } else {
         console.log(user[0].password, registrant.password)
         registrant.login_error = "Please check your password for typos and try again."

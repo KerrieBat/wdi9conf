@@ -12,3 +12,7 @@ html {
 blockquote {
   border-left: 5px solid #68cbe1 !important;
 }
+
+#nav-logo:hover {
+  cursor: pointer;
+}

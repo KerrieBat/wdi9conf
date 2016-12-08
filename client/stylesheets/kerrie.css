@@ -148,6 +148,15 @@ yellow #e8e73d*/
   background-color: #e8e73d;
 }
 
+.mentorship-wrapper{
+  padding-top:50px;
+}
+
+.ment-modal-wrapper{
+  padding-top:10px;
+  padding-bottom: 40px;
+}
+
 .ment-menu {
   font-size: 1.3em;
   margin-left: 2em !important;
@@ -182,6 +191,9 @@ yellow #e8e73d*/
 }
 .color5 {
   background-color: #68cbe1 !important;
+}
+.color6 {
+  background-color: white !important;
 }
 
 /*styling for login*/
