@@ -34,7 +34,7 @@
     float: left;
   }
 
-  .speaker:hover + .speaker-blurb p{
+  .speaker:hover + .speaker-blurb p, .speaker:hover + .hidden-blurb p {
     color: orange;
   }
 
