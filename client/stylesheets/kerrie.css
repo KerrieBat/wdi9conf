@@ -37,17 +37,43 @@ font-family: 'Playfair Display', serif;*/
   width:950px;
   position:absolute;
   z-index: 990;
-  left:19%;
-  top:27%;
+  left:50%;
+  top:50%;
+  margin-top: -200px; /* Half the height */
+  margin-left: -475px; /* Half the width */
 }
 
-@media only screen and (max-width: 680px){
+.bwphoto{
+  position:relative;
+  height:900px;
+}
+
+.bwphoto-container{
+  height: 900px;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 992px){
   .logo-large{
-    width:450px;
+    width:700px;
+    margin-top: -225px; /* Half the height */
+    margin-left: -350px; /* Half the width */
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .logo-large{
+    width:350px;
     position:absolute;
     z-index: 990;
-    left:13%;
+    left:10%;
     top:27%;
+  }
+  .ment-menu {
+    font-size: 1em;
+    margin-left: 0.5em !important;
+    margin-right: 0 !important;
   }
 }
 
@@ -67,9 +93,10 @@ font-family: 'Playfair Display', serif;*/
   background-color: pink;
   padding-bottom: 1em;
   padding-top: 1em;
+  font-size: 1.2em;
 }
 
-.fb {
+.fb{
   max-width: 100%;
   max-height: 100%;
   height: auto;
@@ -88,7 +115,7 @@ font-family: 'Playfair Display', serif;*/
 
 /*sponsors*/
 .logo {
-  height: 8em;
+  height: 10em;
   position: relative;
   display: flex;
   justify-content: center;
@@ -108,10 +135,17 @@ font-family: 'Playfair Display', serif;*/
 
 /*styling for mentorship*/
 
+.mentor{
+  background-color: #e8e73d;
+}
+
 .ment-menu {
   font-size: 1.3em;
   margin-left: 2em !important;
-  margin-right: 1em !important;
+  margin-right: 4em !important;
+}
+.mentor-deets{
+  font-size: 0.9em !important;
 }
 .mentor {
   color: maroon;
@@ -120,7 +154,32 @@ font-family: 'Playfair Display', serif;*/
   padding: 2rem;
 }
 .ment-blurb {
-font-size: 120% ;
+  font-size: 1.8em;
+  line-height: 2em;
+}
+/*
+color4 light grey #e0e0e0
+color3 dark grey #bdbdbd
+color1 main yellow #e8e73d
+color2 light yellow #f1f07c
+color5 accent blue #68cbe1
+yellow #e8e73d*/
+
+.color4 {
+  background-color: #e0e0e0 !important;
+}
+.color3 {
+  background-color: #bdbdbd !important;
+
+}
+.color1 {
+  background-color: #e8e73d !important;
+}
+.color2 {
+  background-color: #f1f07c !important;
+}
+.color5 {
+  background-color: #68cbe1 !important;
 }
 
 /*styling for login*/
@@ -128,7 +187,14 @@ font-size: 120% ;
   margin-bottom: 10px !important;
   height:2rem !important;
 }
+.container-login {
+  background-color: #e8e73d !important
+}
+
 /*styling for register*/
+.container-register {
+  background-color: #e8e73d !important
+}
 .register-block {
   padding-left: 3em !important;
 }
@@ -142,12 +208,20 @@ font-size: 120% ;
   margin-left: 0 !important;
   padding: 0 !important;
 }
-
+.name {
+  padding-left: 0 !important;
+}
 /*styling for dashboard*/
 #mentorship {
 
 }
+.userContact {
+  font-size: 1.8em;
+}
+.mentStyle {
+  font-size: 1.4em;
+}
 label {
   font-size: 1.4em !important;
-  color: white !important;
+  color: black !important;
 }

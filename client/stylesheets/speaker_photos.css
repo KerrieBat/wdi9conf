@@ -1,0 +1,59 @@
+.bg-1 p, .bg-2 p, .bg-3 p, .bg-4 p, .bg-5 p, .bg-6 p, .bg-7 p {
+text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.68);
+font-size: 1.1em;
+}
+
+
+.bg-1 {
+  background-image: url('http://history-computer.com/ModernComputer/Personal/images/alan_kay.jpg');
+  background-size: cover;
+  background-position: top, center;
+}
+
+.bg-2 {
+  background-image: url('http://www.currybet.net/images/blog2009/03/20090304_prof-spark-jones.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #FFF;
+  background-blend-mode: luminosity, normal;
+}
+
+.bg-3 {
+  background-image: url('https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/1700/thumb_HEADSHOTS__2001_.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-3 {
+  background-image: url('https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/1700/thumb_HEADSHOTS__2001_.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-4 {
+  background-image: url('https://s3.amazonaws.com/strangeloop/static-site/prod/speakers/2012/7a1011a0-665c-11e1-ac66-00505684009c_large.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-color: #FFF;
+  background-blend-mode: luminosity, normal;
+}
+
+.bg-5 {
+  background-image: url('https://media.licdn.com/media/AAEAAQAAAAAAAAlQAAAAJGU1NzU0YmU3LTRkMTAtNGNhOS1hN2FlLTcwOGFmMWNlZDQ1NQ.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-6 {
+  background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAVxAAAAJDg5Y2U1NTQ2LTcyNzEtNDNkZi05Y2VjLTBlMjIxOTkxMjBjYQ.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #FFF;
+  background-blend-mode: luminosity, normal;
+}
+
+.bg-7 {
+  background-image: url('https://www.calicolabs.com/wp-content/uploads/daphne-koller-344x258.jpg');
+  background-size: cover;
+  background-position: top, center;
+}

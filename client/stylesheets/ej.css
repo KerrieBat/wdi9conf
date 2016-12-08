@@ -59,8 +59,90 @@ li a:hover{
   color:white!important;
 }
 
+/*MAIN HEADING*/
+
+.hidden{
+  display: none;
+}
+
 /*FOOTER*/
 
 .row{
   margin:0 !important;
+}
+
+/*PROGRAM*/
+
+
+#staggered-test li {
+  opacity:0;
+  margin:5%;
+}
+
+#staggered-test2 li {
+  opacity:0;
+  margin:5%;
+}
+/*#staggered-test2 p, #staggered-test p, .times p{
+  line-height: 2em;
+  font-size: 1.3em;
+}*/
+
+
+#staggered-test2 div, #staggered-test div{
+  min-height: 100px;
+  font-size: 1.4em;
+  font-family: 'Inconsolata', monospace;
+  background-color: white;
+}
+
+.times{
+  margin-left:15%;
+}
+
+.times li div{
+  font-size: 5em;
+  min-height: 125px;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  background-color: white;
+  max-width: 90px
+}
+
+.times h4, #staggered-test2 h4, #staggered-test h4{
+  margin-top:40px;
+}
+
+#staggered-test div {
+    color:blue;
+    padding:20px 0px;
+    margin:0;
+    text-align: center;
+}
+
+#staggered-test2 div {
+    color:#f76262;
+    padding:20px 0px;
+    margin:0;
+    text-align: center;
+}
+
+
+/*#staggered-test2 div:nth-child(odd), #staggered-test div:nth-child(odd), .times div:nth-child(odd) {
+    color:#f76262;
+    padding:20px 0px;
+    margin:0;
+}*/
+
+.lunch{
+  color:black !important;
+}
+
+
+.divide{
+  height:700px;
+  width:5%;
+  position:relative;
+  background-color: #e8e73d;
+  /*border:3px solid #e8e73d;*/
 }
