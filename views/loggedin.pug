@@ -80,14 +80,24 @@ block content
     h2 Mentoring Program
     form(action="/register/mentoring", method="post")
       div.row
+        -
+          var contacts = {
+            "conf": "Find me at the conference",
+            "linkedin": "Connect with me via Linked In",
+            "email": "I like reading emails"
+          }
         div.col.s6
           p.mentStyle Preferred contact method:
         div.col.s6.input-field
-          select.mentStyle(name="contactMethod")
-            option(value="") Please select
-            option(value="conf") Find me at the conference
-            option(value="linkedin") Linked In
-            option(value="email") Email
+          select.mentStyle(name="contact_info")
+            if !user.contact_info
+              option(value="") Please select
+            each val, index in contacts
+              if user.contact_info === index
+                option(value=index selected)= val
+            each val, index in contacts
+              if user.contact_info !== index
+                option(value=index)= val
       div.row
         -
           var opts = {
@@ -117,10 +127,10 @@ block content
         div.col.s6.input-field
           select.mentStyle(name="mentoring")
             each val, index in opts
-                if user.mentoring === val
-                  option(value=index checked)= val
+                if user.mentoring === index
+                  option(value=index selected)= val
             each val, index in opts
-              if user.mentoring !== val
+              if user.mentoring !== index
                 option(value=index)= val
       div.row
         div.col.s6
@@ -128,10 +138,10 @@ block content
         div.col.s6.input-field
           select.mentStyle(name="learning")
             each val, index in opts
-                if user.learning === val
-                  option(value=index checked)= val
+                if user.learning === index
+                  option(value=index selected)= val
             each val, index in opts
-              if user.learning !== val
+              if user.learning !== index
                 option(value=index)= val
       button.btn.black-text.btn-flat Save My Preferences
     div.row
