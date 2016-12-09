@@ -52,6 +52,12 @@ body{
     height: 400px !important;
 }
 
+@media only screen and (max-width: 380px){
+  .parallax-container {
+      height: 300px !important;
+  }
+}
+
 .tag{
   background-color: #e8e73d;
   padding:25px 5px 5px !important;
@@ -63,6 +69,15 @@ li a{
 
 li a:hover{
   color:white!important;
+}
+
+@media (max-width: 700px) {
+
+  #nav-logo {
+    width: 210px;
+    height: 100%;
+  }
+
 }
 
 /*MAIN HEADING*/

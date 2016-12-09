@@ -5,6 +5,12 @@ $(document).ready(function(){
     $('.slider').slider({indicator: false});
     $(".button-collapse").sideNav();
 
+    //hide side nav on click of link
+    $("#side-nav-clear").on("click", function() {
+      $("#sidenav-overlay").trigger("click");
+      return false;
+    });
+
     //parallax main image
     $('.parallax').parallax();
 
