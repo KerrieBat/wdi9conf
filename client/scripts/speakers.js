@@ -1,6 +1,6 @@
 
-var harry = '<p>Harry Aydin</p>'
-var victor = '<p>Bret Victor</p>'
+var harry = '<p>Harry is a full stck web developer from Melbourne. He does not like to mention expertise in HTML5, CSS3, jQuery, Ruby on Rails and Angular.</p>'
+var victor = '<p>Bret is an interface designer, computer scientist, and electrical engineer. He works as a researcher at the Communications Design Group, and is known for his talks on the future of technology.</p>'
 
 function responsiveJS() {
 
