@@ -223,13 +223,23 @@ yellow #e8e73d*/
   margin-left: 0 !important;
   padding: 0 !important;
 }
+.btn {
+  font-size: 1.5em !important;
+}
 .name {
   padding-left: 0 !important;
 }
 /*styling for dashboard*/
 #mentorship {
-
+padding: 2em !important;
 }
+#sessionBookings {
+padding: 2em !important;
+}
+#userDetails {
+padding: 2em !important;
+}
+
 .userContact {
   font-size: 1.5em;
 }

@@ -1,6 +1,12 @@
 extends layout
 
 block content
+  -
+    var contacts = {
+      "conf": "Find me at the conference",
+      "linkedin": "Connect with me via Linked In",
+      "email": "I like reading emails"
+    }
   section#userDetails.color3.white-text.container
     h2 Your Details
     div.row
@@ -75,7 +81,7 @@ block content
         div.col.s4
           input(type="radio" name="sessionSix" value="two" id="six-two")
           label(for="six-two") Session Twelve
-      button.btn.black-text.btn-flat Book Me In
+      button.btn.left-align.teal-text.btn-flat Book Me In
   section#mentorship.white-text.color3.container
     h2 Mentoring Program
     form(action="/register/mentoring", method="post")
@@ -83,18 +89,22 @@ block content
         div.col.s6
           p.mentStyle Preferred contact method:
         div.col.s6.input-field
-          select.mentStyle(name="contactMethod")
-            option(value="") Please select
-            option(value="conf") Find me at the conference
-            option(value="linkedin") Linked In
-            option(value="email") Email
+          select.mentStyle(name="contact_info")
+            if !user.contact_info
+              option(value="") Please select
+            each val, index in contacts
+              if user.contact_info === index
+                option(value=index selected)= val
+            each val, index in contacts
+              if user.contact_info !== index
+                option(value=index)= val
       div.row
         -
           var opts = {
             "none": "General Advice",
             "Android": "Android",
             "Angular": "Angular",
-            "Csharp": "C#",
+            "C-sharp": "C#",
             "iOS": "iOS",
             "Java": "Java",
             "JavaScript": "JavaScript",
@@ -117,10 +127,10 @@ block content
         div.col.s6.input-field
           select.mentStyle(name="mentoring")
             each val, index in opts
-                if user.mentoring === val
-                  option(value=index checked)= val
+                if user.mentoring === index
+                  option(value=index selected)= val
             each val, index in opts
-              if user.mentoring !== val
+              if user.mentoring !== index
                 option(value=index)= val
       div.row
         div.col.s6
@@ -128,28 +138,28 @@ block content
         div.col.s6.input-field
           select.mentStyle(name="learning")
             each val, index in opts
-                if user.learning === val
-                  option(value=index checked)= val
+                if user.learning === index
+                  option(value=index selected)= val
             each val, index in opts
-              if user.learning !== val
+              if user.learning !== index
                 option(value=index)= val
       button.btn.black-text.btn-flat Save My Preferences
     div.row
       div.col.s12
-        h2 Suggested mentors
+        h4 Suggested mentors
         each mentor in mentors
-          div
+          div.black-text
             p= mentor.first_name + ' ' + mentor.last_name
-            p= 'Mentoring: ' + mentor.learning
-            p= mentor.contact_info
+            p= 'Mentoring: ' + mentor.mentoring
+            p= contacts[mentor.contact_info]
     div.row
       div.col.s12
-        h2 Suggested mentees
+        h4 Suggested mentees
         each mentee in mentees
-          div
+          div.black-text
             p= mentee.first_name + ' ' + mentee.last_name
             p= 'Learning: ' + mentee.learning
-            p= mentee.contact_info
+            p= contacts[mentee.contact_info]
 
 block js
   script(src="/scripts/dashboard.js")
