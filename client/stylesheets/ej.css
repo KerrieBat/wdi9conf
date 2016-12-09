@@ -65,6 +65,15 @@ li a:hover{
   color:white!important;
 }
 
+@media (max-width: 700px) {
+
+  #nav-logo {
+    width: 210px;
+    height: 100%;
+  }
+
+}
+
 /*MAIN HEADING*/
 
 .hidden{
