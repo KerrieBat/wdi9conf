@@ -1,6 +1,12 @@
 extends layout
 
 block content
+  -
+    var contacts = {
+      "conf": "Find me at the conference",
+      "linkedin": "Connect with me via Linked In",
+      "email": "I like reading emails"
+    }
   section#userDetails.color3.white-text.container
     h2 Your Details
     div.row
@@ -80,12 +86,6 @@ block content
     h2 Mentoring Program
     form(action="/register/mentoring", method="post")
       div.row
-        -
-          var contacts = {
-            "conf": "Find me at the conference",
-            "linkedin": "Connect with me via Linked In",
-            "email": "I like reading emails"
-          }
         div.col.s6
           p.mentStyle Preferred contact method:
         div.col.s6.input-field
@@ -104,7 +104,7 @@ block content
             "none": "General Advice",
             "Android": "Android",
             "Angular": "Angular",
-            "Csharp": "C#",
+            "C-sharp": "C#",
             "iOS": "iOS",
             "Java": "Java",
             "JavaScript": "JavaScript",
@@ -149,9 +149,10 @@ block content
         h2 Suggested mentors
         each mentor in mentors
           div
+            - console.log(mentor)
             p= mentor.first_name + ' ' + mentor.last_name
-            p= 'Mentoring: ' + mentor.learning
-            p= mentor.contact_info
+            p= 'Mentoring: ' + mentor.mentoring
+            p= contacts[mentor.contact_info]
     div.row
       div.col.s12
         h2 Suggested mentees
@@ -159,7 +160,7 @@ block content
           div
             p= mentee.first_name + ' ' + mentee.last_name
             p= 'Learning: ' + mentee.learning
-            p= mentee.contact_info
+            p= contacts[mentee.contact_info]
 
 block js
   script(src="/scripts/dashboard.js")
