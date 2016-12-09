@@ -10,7 +10,7 @@ var users = [
     mentoring: 'General',
     learning: 'design',
     bio: 'Web Development Immersive Lead Instructor at General Assembly',
-    contact_info: 'Breakout space'
+    contact_info: 'conf'
   },
   {
     username: 'HMAN1911',
@@ -20,7 +20,7 @@ var users = [
     mentoring: 'NodeJS',
     learning: 'PHP',
     bio: 'Teaching Assistant at General Assembly',
-    contact_info: 'LinkedIn'
+    contact_info: 'linkedin'
   },
   {
     username: 'kasun-maldeni',
@@ -30,7 +30,7 @@ var users = [
     mentoring: 'C-sharp',
     learning: 'MEAN',
     bio: 'Teaching Assistant at General Assembly',
-    contact_info: 'Breakout space'
+    contact_info: 'conf'
   },
   {
     username: 'BobbyTables',
@@ -40,8 +40,68 @@ var users = [
     mentoring: 'SQL',
     learning: 'React',
     bio: 'Hi, everybody calls me \';DROP TABLE STUDENTS;--',
-    contact_info: 'Breakout space'
-  }
+    contact_info: 'email'
+  },
+  {
+    username: 'eolhc',
+    first_name: 'Chloe',
+    last_name: 'Phua',
+    email: 'chloe@ga.co',
+    mentoring: 'Angular',
+    learning: 'General',
+    bio: 'Student at General Assembly',
+    contact_info: 'email'
+  },
+  {
+    username: 'paulmorello',
+    first_name: 'Paul',
+    last_name: 'Morello',
+    email: 'paulm@ga.co',
+    mentoring: 'design',
+    learning: 'General',
+    bio: 'Student at General Assembly',
+    contact_info: 'conf'
+  },
+  {
+    username: 'jamesmah',
+    first_name: 'James',
+    last_name: 'Mah',
+    email: 'jamesm@ga.co',
+    mentoring: 'LinkedIn',
+    learning: 'SQL',
+    bio: 'Student at General Assembly',
+    contact_info: 'email'
+  },
+  {
+    username: 'zutaar',
+    first_name: 'Leon',
+    last_name: 'Parrot',
+    email: 'zutaar@ga.co',
+    mentoring: 'React',
+    learning: 'PHP',
+    bio: 'Student at General Assembly',
+    contact_info: 'conf'
+  },
+  {
+    username: 'CatherineGracey',
+    first_name: 'Catherine',
+    last_name: 'Gracey',
+    email: 'catherine@ga.co',
+    mentoring: 'PHP',
+    learning: 'General',
+    bio: 'Student at General Assembly',
+    contact_info: 'conf'
+  },
+  {
+    username: 'duyenho',
+    first_name: 'Duyen',
+    last_name: 'Ho',
+    email: 'duyenh@ga.co',
+    mentoring: 'design',
+    learning: 'ux',
+    bio: 'Student at General Assembly',
+    contact_info: 'conf'
+  },
 ];
 
 // Room data
