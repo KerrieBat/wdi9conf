@@ -75,7 +75,7 @@ yellow #e8e73d*/
     z-index: 990;
     left:50%;
     top:50%;
-    margin-top: -270px; /* Half the height */
+    margin-top: -250px; /* Half the height */
     margin-left: -140px; /* Half the width */
   }
 
