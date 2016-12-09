@@ -1,6 +1,12 @@
 extends layout
 
 block content
+  -
+    var contacts = {
+      "conf": "Find me at the conference",
+      "linkedin": "Connect with me via Linked In",
+      "email": "I like reading emails"
+    }
   section#userDetails.color3.white-text.container
     h2 Your Details
     div.row
@@ -83,64 +89,61 @@ block content
         div.col.s6
           p.mentStyle Preferred contact method:
         div.col.s6.input-field
-          select.mentStyle(name="contactMethod")
-            option(value="") Please select
-            option(value="conf") Find me at the conference
-            option(value="linkedin") Linked In
-            option(value="email") Email
+          select.mentStyle(name="contact_info")
+            if !user.contact_info
+              option(value="") Please select
+            each val, index in contacts
+              if user.contact_info === index
+                option(value=index selected)= val
+            each val, index in contacts
+              if user.contact_info !== index
+                option(value=index)= val
       div.row
+        -
+          var opts = {
+            "none": "General Advice",
+            "Android": "Android",
+            "Angular": "Angular",
+            "C-sharp": "C#",
+            "iOS": "iOS",
+            "Java": "Java",
+            "JavaScript": "JavaScript",
+            "LAMP": "LAMP Stack",
+            "MEAN": "MEAN Stack",
+            "NodeJS": "Node.js",
+            "PHP": "PHP",
+            "Python": "Python",
+            "React": "React",
+            "SQL": "SQL",
+            "Swift": "Swift",
+            "WordPress": "WordPress",
+            "design": "Design",
+            "analytics": "Data Analytics",
+            "ux": "User Experience",
+            "careers": "Career Development"
+          }
         div.col.s6
           p.mentStyle I'd like to provide mentoring in:
         div.col.s6.input-field
           select.mentStyle(name="mentoring")
-            option(value="") Please select
-            option(value="General") General Advice
-            option(value="Android") Android
-            option(value="Angular") Angular
-            option(value="C-sharp") C#
-            option(value="iOS") iOS
-            option(value="Java") Java
-            option(value="JavaScript") JavaScript
-            option(value="LAMP") LAMP Stack
-            option(value="MEAN") MEAN Stack
-            option(value="NodeJS") Node.js
-            option(value="PHP") PHP
-            option(value="Python") Python
-            option(value="React") React
-            option(value="SQL") SQL
-            option(value="Swift") Swift
-            option(value="Wordpress") WordPress
-            option(value="design") Design
-            option(value="analytics") Data Analytics
-            option(value="ux") User Experience
-            option(value="careers") Career Development
+            each val, index in opts
+                if user.mentoring === index
+                  option(value=index selected)= val
+            each val, index in opts
+              if user.mentoring !== index
+                option(value=index)= val
       div.row
         div.col.s6
           p.mentStyle I'd like to receive mentoring in:
         div.col.s6.input-field
           select.mentStyle(name="learning")
-            option(value="") Please select
-            option(value="General") General Mentoring
-            option(value="Android") Android
-            option(value="Angular") Angular
-            option(value="C-sharp") C#
-            option(value="iOS") iOS
-            option(value="Java") Java
-            option(value="JavaScript") JavaScript
-            option(value="LAMP") LAMP Stack
-            option(value="MEAN") MEAN Stack
-            option(value="NodeJS") Node.js
-            option(value="PHP") PHP
-            option(value="Python") Python
-            option(value="React") React
-            option(value="SQL") SQL
-            option(value="Swift") Swift
-            option(value="Wordpress") WordPress
-            option(value="design") Design
-            option(value="analytics") Data Analytics
-            option(value="ux") User Experience
-            option(value="careers") Career Development
-      button.btn.btn-flat.teal-text.left-align Save My Preferences
+            each val, index in opts
+                if user.learning === index
+                  option(value=index selected)= val
+            each val, index in opts
+              if user.learning !== index
+                option(value=index)= val
+      button.btn.black-text.btn-flat Save My Preferences
     div.row
       div.col.s12
         h4 Suggested mentors
@@ -148,7 +151,7 @@ block content
           div.black-text
             p= mentor.first_name + ' ' + mentor.last_name
             p= 'Mentoring: ' + mentor.mentoring
-            p= mentor.contact_info
+            p= contacts[mentor.contact_info]
     div.row
       div.col.s12
         h4 Suggested mentees
@@ -156,7 +159,7 @@ block content
           div.black-text
             p= mentee.first_name + ' ' + mentee.last_name
             p= 'Learning: ' + mentee.learning
-            p= mentee.contact_info
+            p= contacts[mentee.contact_info]
 
 block js
   script(src="/scripts/dashboard.js")
