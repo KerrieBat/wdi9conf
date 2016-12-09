@@ -157,11 +157,13 @@ yellow #e8e73d*/
   padding-bottom: 40px;
 }
 
+
 .ment-menu {
   font-size: 1.3em;
-  margin-left: 2em !important;
-  margin-right: 4em !important;
+  margin-left: 3em !important;
+  margin-right: 3em !important;
 }
+
 .mentor-deets{
   font-size: 0.9em !important;
 }
@@ -181,7 +183,6 @@ yellow #e8e73d*/
 }
 .color3 {
   background-color: #bdbdbd !important;
-
 }
 .color1 {
   background-color: #e8e73d !important;
