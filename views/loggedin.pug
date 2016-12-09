@@ -75,7 +75,7 @@ block content
         div.col.s4
           input(type="radio" name="sessionSix" value="two" id="six-two")
           label(for="six-two") Session Twelve
-      button.btn.black-text.btn-flat Book Me In
+      button.btn.left-align.teal-text.btn-flat Book Me In
   section#mentorship.white-text.color3.container
     h2 Mentoring Program
     form(action="/register/mentoring", method="post")
@@ -89,51 +89,58 @@ block content
             option(value="linkedin") Linked In
             option(value="email") Email
       div.row
-        -
-          var opts = {
-            "none": "General Advice",
-            "Android": "Android",
-            "Angular": "Angular",
-            "Csharp": "C#",
-            "iOS": "iOS",
-            "Java": "Java",
-            "JavaScript": "JavaScript",
-            "LAMP": "LAMP Stack",
-            "MEAN": "MEAN Stack",
-            "NodeJS": "Node.js",
-            "PHP": "PHP",
-            "Python": "Python",
-            "React": "React",
-            "SQL": "SQL",
-            "Swift": "Swift",
-            "WordPress": "WordPress",
-            "design": "Design",
-            "analytics": "Data Analytics",
-            "ux": "User Experience",
-            "careers": "Career Development"
-          }
         div.col.s6
           p.mentStyle I'd like to provide mentoring in:
         div.col.s6.input-field
           select.mentStyle(name="mentoring")
-            each val, index in opts
-                if user.mentoring === val
-                  option(value=index checked)= val
-            each val, index in opts
-              if user.mentoring !== val
-                option(value=index)= val
+            option(value="") Please select
+            option(value="General") General Advice
+            option(value="Android") Android
+            option(value="Angular") Angular
+            option(value="C-sharp") C#
+            option(value="iOS") iOS
+            option(value="Java") Java
+            option(value="JavaScript") JavaScript
+            option(value="LAMP") LAMP Stack
+            option(value="MEAN") MEAN Stack
+            option(value="NodeJS") Node.js
+            option(value="PHP") PHP
+            option(value="Python") Python
+            option(value="React") React
+            option(value="SQL") SQL
+            option(value="Swift") Swift
+            option(value="Wordpress") WordPress
+            option(value="design") Design
+            option(value="analytics") Data Analytics
+            option(value="ux") User Experience
+            option(value="careers") Career Development
       div.row
         div.col.s6
           p.mentStyle I'd like to receive mentoring in:
         div.col.s6.input-field
           select.mentStyle(name="learning")
-            each val, index in opts
-                if user.learning === val
-                  option(value=index checked)= val
-            each val, index in opts
-              if user.learning !== val
-                option(value=index)= val
-      button.btn.black-text.btn-flat Save My Preferences
+            option(value="") Please select
+            option(value="General") General Mentoring
+            option(value="Android") Android
+            option(value="Angular") Angular
+            option(value="C-sharp") C#
+            option(value="iOS") iOS
+            option(value="Java") Java
+            option(value="JavaScript") JavaScript
+            option(value="LAMP") LAMP Stack
+            option(value="MEAN") MEAN Stack
+            option(value="NodeJS") Node.js
+            option(value="PHP") PHP
+            option(value="Python") Python
+            option(value="React") React
+            option(value="SQL") SQL
+            option(value="Swift") Swift
+            option(value="Wordpress") WordPress
+            option(value="design") Design
+            option(value="analytics") Data Analytics
+            option(value="ux") User Experience
+            option(value="careers") Career Development
+      button.btn.btn-flat.teal-text.left-align Save My Preferences
     div.row
       div.col.s12
         h2 Suggested mentors
