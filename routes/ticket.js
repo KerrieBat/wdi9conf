@@ -29,8 +29,8 @@ router.post('/', (req, res) => {
     } else {
       db.insert(registrant).into('users')
       .then(function(id){
-        console.log(id)
-        req.session.user = registrant[0].email + "#%" + password.generateHash(registrant[0].email);
+        console.log("registering the user has created: ", id)
+        req.session.user = registrant.email + "#%" + password.generateHash(registrant.email);
         res.redirect('/user');
       })
     }
