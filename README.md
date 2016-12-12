@@ -18,10 +18,30 @@ Team - Queens of GA - Catherine, EJ, Kerrie, Melissa, Micah
 Fork repository
 Clone your fork
 $npm install
-cp local_db.config.js.template local_db.config.js
+$cp local_db.config.js.template local_db.config.js
 Edit login credentials in local_db.config.js
-Create PostgreSQL database wdiconf
-./node_modules/.bin/knex migrate:latest
-./node_modules/.bin/knex seed:run
+$Create PostgreSQL database wdiconf
+$./node_modules/.bin/knex migrate:latest
+$./node_modules/.bin/knex seed:run
 Run either npm start or npm run dev
+$npm start
+```
+
+## Planning
+```
+https://trello.com/b/BskwvmKP/wdi-conf 
+```
+
+## Future Development
+```
+- Improve mentorship algorithms to match mentor with mentee
+- get programming to work better
+
+```
+##website
+```
+http://wdi-conf-2016.herokuapp.com/
+
+
+
 ```

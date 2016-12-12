@@ -231,13 +231,20 @@ yellow #e8e73d*/
 }
 /*styling for dashboard*/
 #mentorship {
-padding: 2em !important;
+  padding-top: 2em !important;
+  padding-left: 3em !important;
+  padding-right: 2em !important;
 }
 #sessionBookings {
-padding: 2em !important;
+  padding-top: 2em !important;
+  padding-left: 3em !important;
+  padding-right: 2em !important;
 }
 #userDetails {
-padding: 2em !important;
+  padding-top: 2em !important;
+  padding-left: 3em !important;
+  padding-right: 2em !important;
+  }
 }
 
 .userContact {
